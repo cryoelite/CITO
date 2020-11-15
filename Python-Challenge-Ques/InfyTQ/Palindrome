@@ -1,0 +1,34 @@
+Q. For a given positive number num, identify the palindrome formed by performing the following operations-
+  >Add num and its reverse
+  >Check whether the sum is palindrome or not. If not, add the sum and its reverse and repeat the process until a palindrome is obtained.
+  
+For Example:
+If original integer is 195, we get 9339 as the resulting palindrome after the fourth addition.
+
+My Solution:
+Python 3.0
+
+num=int(input())
+temp=num
+def palin(r):
+    c=0
+    rev=0
+    while(r>0):
+        c=r%10
+        rev=rev*10+c 
+        r=r//10
+    return rev 
+def addall(r1,r2):
+    c=0 
+    c=r1+r2
+    return c 
+flag=0 
+ra=num 
+while(flag!=1):
+    ra=palin(ra)
+    ra=addall(ra,temp)
+    if(ra==palin(ra)):
+        flag=1 
+    else:
+        temp=ra 
+print(ra)

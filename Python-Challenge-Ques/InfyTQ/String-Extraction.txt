@@ -1,0 +1,34 @@
+Q. Given a string str, print a number num by extracting all digits from str in the same order as in str.
+
+Print a negative number num if the first character in str is '-'
+
+Input format:
+Read the string str from the standard input stream.
+
+Output format:
+Print the number num to the standard output stream
+
+Assumption(s):
+  	>String str will have atleast 1 integer and will not be empty
+
+Python 3.0
+
+
+My Solution
+import re
+def ltos(s):
+	str1=""
+	for ele in s:
+		str1+=ele
+	return str1
+str=input()
+s2=-1
+s2=str.find('-')
+if(s2==0):
+	str2=re.findall('\d+',str)
+	sstr2=ltos(str2)
+	print('-'+sstr2)
+else:
+	str2=re.findall('\d+',str)
+	sstr2=ltos(str2)
+	print(sstr2)

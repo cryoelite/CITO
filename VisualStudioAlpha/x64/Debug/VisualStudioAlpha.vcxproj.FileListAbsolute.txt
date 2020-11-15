@@ -1,0 +1,4 @@
+C:\Users\arvin\Documents\GitHub\TestCode\VisualStudioAlpha\x64\Debug\VisualStudioAlpha.exe
+C:\Users\arvin\Documents\GitHub\TestCode\VisualStudioAlpha\x64\Debug\VisualStudioAlpha.pdb
+C:\Users\millify\Documents\GitHub\TestCode\VisualStudioAlpha\x64\Debug\VisualStudioAlpha.exe
+C:\Users\millify\Documents\GitHub\TestCode\VisualStudioAlpha\x64\Debug\VisualStudioAlpha.pdb
