@@ -1,21 +1,32 @@
-class Node:
-  def __init__(self,val):
-    self.val=val
-    self.left=None
-    self.right=None
-class Starter:
-  def __init__(self):
-    self.start=None
-if __name__=='__main__':
-  nOfTestCases=1#int(input())
-  for i in range(nOfTestCases):
-    maxSize=[3,2]#list(map(int,input().split()))
-    maxSize,forbid=maxSize
-    antiRule=[input() for i in range(forbid)]
-    tree=Starter()
-    elem=antiRule[0]
-    elem=elem[0]
-    if elem == 
-    header=tree.start()
-    for j in range(forbid):
-      elem=antiRule[j]
+class Temperature:
+  celsius=9
+  fahrenheit=0
+  def __init__(self,value=0):
+    self._fahrenheit=value
+    self._celsius=value/2
+
+  @property
+  def celsius(self):
+    print("getCel")
+    return self._celsius
+
+  @celsius.setter
+  def celsius(self,value):
+    print("setCel")
+    self._celsius=value
+
+  @property
+  def fahrenheit(self):
+    print("getTemop")
+    return self._fahrenheit
+
+  @fahrenheit.setter
+  def fahrenheit(self,value):
+    print("set temp")
+    self._fahrenheit=value
+  
+
+human=Temperature(29)
+print(human.fahrenheit)
+human.fahrenheit=30
+print(human.celsius)
