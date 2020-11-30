@@ -7,7 +7,6 @@ from uuid import uuid4
 import requests
 from flask import Flask, jsonify, request
 
-
 class Blockchain:
     def __init__(self):
         self.current_transactions = []
@@ -41,7 +40,6 @@ class Blockchain:
         :param chain: A blockchain
         :return: True if valid, False if not
         """
-
         last_block = chain[0]
         current_index = 1
 
