@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "chrono": "cpp"
-    }
+    },
+    "python.pythonPath": "C:\\Users\\millify\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }

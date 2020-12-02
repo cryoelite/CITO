@@ -33,21 +33,8 @@ int main()
 {
 
     using namespace std;
-    int num{};
-
-   
-    cin >> num;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    int answer{};
-    vector<int> arr{ 0,0,1,1,0,1,0,1,0,1};
-    while (num != 0)
-    {
-        int temp{ num % 10 };
-        num = num / 10;
-        if (arr[temp] == 1)
-            answer += temp;
-    }
     
-    cout << answer;
+    
+    cout << "ur mum gay";
     return 0;
 }
