@@ -1,0 +1,2 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\VisualStudioBeta\Debug\VisualStudioBeta.exe
+C:\Users\millify\Documents\GitHub\CodeITestOn\VisualStudioBeta\Debug\VisualStudioBeta.pdb

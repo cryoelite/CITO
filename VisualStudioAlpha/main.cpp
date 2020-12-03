@@ -14,7 +14,7 @@ public:
 int main()
 {
 	using namespace std;
-	P d;
+	
 	P::c = 2;
 
 	return 0;
