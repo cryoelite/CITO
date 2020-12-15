@@ -1,3 +1,13 @@
-const args=require('minimist')
-const pargs=args(process.argv.slice(2));
-console.log(pargs['name']);
+const foo= () => console.log("foo");
+
+const bar= () => console.log("bar");
+
+function coll () {
+    setTimeout(foo,0);
+    bar();
+
+}
+
+process.nextTick(()=>console.log("tick"));
+
+coll();
