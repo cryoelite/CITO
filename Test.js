@@ -1,13 +1,22 @@
-const foo= () => console.log("foo");
-
-const bar= () => console.log("bar");
-
-function coll () {
-    setTimeout(foo,0);
-    bar();
-
+const https = require('https')
+const options = {
+  hostname: 'www.youtube.com/watch?v=c9N3SmXZqlk',
+  port: 80,
+  path: '/',
+  method: 'GET'
 }
 
-process.nextTick(()=>console.log("tick"));
+const req = https.request(options, res => {
+  console.log(`statusCode: ${res.statusCode}`)
 
-coll();
+  res.on('data', d => {
+    process.stdout.write(d)
+  })
+  
+})
+
+req.on('error', error => {
+  console.error(error)
+})
+
+req.end()
