@@ -6,9 +6,10 @@ class ScreenSize {
   static double w;
   static double maxw;
   ScreenSize(BuildContext ctx) {
-    h = ctx.size.height / 128;
-    maxh = ctx.size.height;
-    w = ctx.size.width / 128;
-    maxw = ctx.size.width;
+    final Size mediaq = MediaQuery.of(ctx).size;
+    h = mediaq.height / 128;
+    maxh = mediaq.height;
+    w = mediaq.width / 128;
+    maxw = mediaq.width;
   }
 }
