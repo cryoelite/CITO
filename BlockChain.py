@@ -61,7 +61,6 @@ class Blockchain:
             current_index += 1
 
         return True
-
     def resolve_conflicts(self):
         """
         This is our consensus algorithm, it resolves conflicts
