@@ -15,10 +15,32 @@ class Timer
 	}
 };
 
-void sortedFuck(int* arr)
+enum dir
+{
+	DEF,
+	INCR,
+	DECR,
+};
+void sortedFuck(int* arr, int arrSize)
 {
 	using namespace std;
-	cout << arr[5];
+
+
+}
+
+bool comparator(int& firstElem, int& secondElem, dir biDir)
+{
+	if (biDir == INCR)
+	{
+		if (firstElem < secondElem)
+			return true;
+		else
+			return false;
+	}
+	if (firstElem > secondElem)
+		return true;
+	else
+		return false;
 
 }
 
@@ -27,6 +49,10 @@ int main()
 {
 	using namespace std;
 	int arr[]{ 3,7,4,8,6,2,1,5 };
-	sortedFuck(arr);
+	int arrSize = 8;
+	if (arrSize % 2 != 0)
+		cout << "Need an even sized sequence to sort.";
+	else
+		sortedFuck(arr, 8);
 	return 0;
 }
