@@ -7,18 +7,14 @@ class ScreenTheme {
     return Container(
       decoration: BoxDecoration(
         gradient: RadialGradient(
+          center: Alignment(-0.96, -0.06),
+          radius: 1.606,
           colors: [color1, color2],
-          center: Alignment.bottomLeft,
+          stops: [0.0, 1.0],
         ),
       ),
       height: htx,
       width: wtx,
-      child: Text(
-        "see",
-        style: TextStyle(
-          color: Colors.white,
-        ),
-      ),
     );
   }
 }
