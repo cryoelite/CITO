@@ -1,21 +1,43 @@
 import 'package:flutter/material.dart';
 
-import 'package:citoflutter/route_home.dart';
-import 'package:citoflutter/route_SignIn.dart';
-import 'package:citoflutter/route_SignUp.dart';
+main() {
+  runApp(MaterialApp(
+    home: Page1(),
+  ));
+}
 
-void main() => runApp(StartApp());
-
-class StartApp extends StatelessWidget {
-  @override
+class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (context) => Home(),
-        'SignUp': (context) => RouteSignUp(),
-        'SignIn': (context) => RouteSignIn(),
-      },
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go!'),
+          onPressed: () {
+            Navigator.of(context).push(_createRoute());
+          },
+        ),
+      ),
+    );
+  }
+}
+
+Route _createRoute() {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => Page2(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return child;
+    },
+  );
+}
+
+class Page2 extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: Text('Page 2'),
+      ),
     );
   }
 }
