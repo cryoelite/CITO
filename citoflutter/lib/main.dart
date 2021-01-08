@@ -6,23 +6,40 @@ main() {
   ));
 }
 
-class Page1 extends StatelessWidget {
-  Offset offset1 = Offset(0.4, 0.7);
+class Page1 extends StatefulWidget {
+  @override
+  _Page1State createState() => _Page1State();
+}
+
+class _Page1State extends State<Page1> {
+  double x = 0.0;
+  double y = 0.0;
+  double z = 0.0;
   Widget build(BuildContext context) {
-    return Transform(
-      transform: Matrix4.identity()
-        ..setEntry(3, 2, 0.001)
-        ..rotateX(offset1.dx)
-        ..rotateY(offset1.dy),
-      alignment: FractionalOffset.center,
-      child: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: ElevatedButton(
-            child: Text('Go!'),
-            onPressed: () {
-              Navigator.of(context).push(_createRoute());
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: Transform(
+          transform: Matrix4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, x, y, z, 1)
+            ..setEntry(3, 2, 0.001)
+            ..rotateX(x)
+            ..rotateY(y)
+            ..rotateZ(z),
+          alignment: FractionalOffset.center,
+          child: GestureDetector(
+            onPanUpdate: (details) {
+              setState(() {
+                print("oan and $x $y $z");
+
+                x = x + details.delta.dy / 100;
+                y = y - details.delta.dx / 100;
+              });
             },
+            child: Container(
+              height: 120,
+              width: 120,
+              color: Colors.red,
+            ),
           ),
         ),
       ),
