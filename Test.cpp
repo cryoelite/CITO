@@ -1,11 +1,24 @@
+#include<iostream>
+#include<string>
 
-void ff(int,int);
-void main()
+void doStuff(std::string& L)
 {
- const int i=0;
+    using namespace std;
+    int N{stoi(L)};
+    int maxN=(N*2)-2;
+    for(int i{};i<N;++i)
+    {
+        int j{i};
+        while(i>0)
+        {
+            
+        }
+    }
 }
 
-void ff(int a,int b)
+int main()
 {
-
+    std::string a{"4"};
+    doStuff(a);
+    return 0;
 }
