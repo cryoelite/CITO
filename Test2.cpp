@@ -1,43 +1,25 @@
 #include <iostream>
-#include <vector>
 #include <string>
-#include <sstream>
-#include <algorithm>
-int main()
-{
-    using namespace std;
-    string inp{};
-    getline(cin, inp);
-    vector<string> participants{};
-    vector<string> Totaldifference{};
-    vector<string> winners{};
+using namespace std;
 
-    auto splitter = [&](vector<string> &names) mutable {
-        stringstream inpStream{inp};
-        inpStream << inp;
-        string temp;
-        while (getline(inpStream, temp, ' '))
-            names.push_back(temp);
-    };
-    splitter(participants);
+int ArrayChallenge(string strArr[], int arrLength) {
+  int num{};
+  for(int i{};i<arrLength;++i)
+  {
+      if(strArr[0][i]!=strArr[1][i])
+        num++;
+  }
+  return num;
 
-    getline(cin, inp);
+}
 
-    splitter(winners);
-    sort(participants.begin(), participants.end());
-    sort(winners.begin(), winners.end());
-    set_difference(participants.begin(), participants.end(), winners.begin(), winners.end(), Totaldifference.begin());
-    /* auto ib = winners.begin();
-    participants.erase(std::remove_if(
-        participants.begin(), participants.end(),
-        [&](string x) -> bool {
-            while (ib != winners.end() && *ib < x)
-                ++ib;
-            return (ib != winners.end() && *ib == x);
-        })); */
-    for (auto &x : Totaldifference)
-    {
-        cout << x << " ";
-    }
-    return 0;
+int main(void) { 
+   
+  // keep this function call here
+  string A[] = {"10011","10100"};
+  int arrLength = sizeof(A) ;
+  cout<<arrLength<<"\n";
+  cout << ArrayChallenge(A, arrLength);
+  return 0;
+    
 }
