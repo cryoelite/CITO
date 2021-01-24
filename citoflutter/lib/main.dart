@@ -14,6 +14,7 @@ class Page1 extends StatefulWidget {
 class _Page1State extends State<Page1> {
   double x = 0.0;
   double y = 0.0;
+  List ss = [];
   double z = 0.0;
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +28,7 @@ class _Page1State extends State<Page1> {
             ..rotateZ(z),
           alignment: FractionalOffset.center,
           child: GestureDetector(
+            onDoubleTap: () => Navigator.of(context).push(_createRoute()),
             onPanUpdate: (details) {
               setState(() {
                 print("oan and $x $y $z");
@@ -51,7 +53,17 @@ Route _createRoute() {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => Page2(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      return child;
+      Offset begin = Offset(1, 0);
+      Offset end = Offset(0, 0);
+      Curve curve = Curves.bounceIn;
+      Animatable<Offset> tween =
+          Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+      Animation offsetAnimation = animation.drive(tween);
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
     },
   );
 }
