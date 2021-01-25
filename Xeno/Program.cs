@@ -1,31 +1,63 @@
 ﻿using System;
-
-
-class Am
+using System.Linq;
+using System.Collections.Generic;
+class main
 {
-    public virtual void call()
+
+    public static void maxDef( int a, int b, int c, int d)
     {
-        Console.WriteLine("Am");
+        int s = a;
+        int t = b;
+        while (a < c)
+        {
+            if (a + b > c)
+                break;
+            a = a + b;
+            
+        }
+        while (b<d)
+        {
+            if (a + b > d)
+                break;
+            b = a + b;
+        }
+        
+        Console.WriteLine($"{a} {b}");
+        if (a == c && b == d)
+            Console.WriteLine("Y");
+        a = s;
+        b = t;
+        while (b < d)
+        {
+            if (a + b > d)
+                break;
+            b = a + b;
+        }
+
+
+        while (a < c)
+        {
+            if (a + b > c)
+                break;
+            a = a + b;
+
+        }
+        
+        if (a == c && b == d)
+            Console.WriteLine("Y");
+        Console.WriteLine("n");
+
+
+
     }
-}
-
-class Pm: Am
-{
-    public override void call()
+    public static void Main()
     {
-        Console.WriteLine("Pm");
-    }
 
-    
-}
-class Yo
-{
-    public static int Main()
-    {
-        Am am = new Am();
-        Pm pm = new Pm();
-        am.call();
-        pm.call();
-        return 0;
+        maxDef(1, 4, 62, 45);
+
+        
+        
+
+
     }
 }
