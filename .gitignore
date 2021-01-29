@@ -1,5 +1,5 @@
 #dart
-*.google-services.json
+google-services.json
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
