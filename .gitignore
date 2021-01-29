@@ -1,5 +1,5 @@
 #dart
-android\app\google-services.json
+.android\app\google-services.json
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
