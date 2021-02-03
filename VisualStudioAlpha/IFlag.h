@@ -1,32 +1,56 @@
 #pragma once
 
-#include<string>
+
 #include<Windows.h>
 #include<chrono>
+#include<string>
 #include<algorithm>
 #include<conio.h>
+#include<vector>
+#include<math.h>
+#include<thread>
+
+
+enum class STATE {
+	FIRST,
+	SECOND,
+	THIRD,
+	DEFAULT,
+};
 
 class IFlag
 {
 
-	inline static int hSize = 852;
-	inline static int wSize = 480;
-	inline static int totalSize = hSize * wSize;
-	wchar_t* screen;
-	wchar_t* swbuffer;
-	
-	std::wstring swString;
-	
 
+	int hSize ;
+	int wSize ;
+	int totalSize;
+	wchar_t* screen;
+	double sinVal;
+	const inline static double PI = 2 * acos(0.0);
+
+	int axes;
+
+	COORD coord;
 	HANDLE hConsole;
-	DWORD dBytesWritten{};
+	std::wstring swString;
+	HANDLE defHandle;
+
+
+
 	
+	DWORD dBytesWritten{};
+
 	std::chrono::system_clock::time_point tp1;
 	std::chrono::system_clock::time_point tp2;
 
-	
+	void drawIt(STATE& state);
 public:
-	IFlag();
-	void runApp();
+	
+	IFlag(int,int);
+	void runApp(const int&, const int&);
+	void setCSize(COORD);
+	
+	~IFlag();
 };
 
