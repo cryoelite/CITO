@@ -1,6 +1,7 @@
 #include<iostream>
 #include<opencv2/opencv.hpp>
 #include "IFlag.h"
+#include<numeric>
 
 int main()
 {
