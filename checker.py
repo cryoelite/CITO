@@ -1,11 +1,5 @@
 
-import hashlib
-def md5(fname):
-    hash_md5 = hashlib.md5()
-    with open(fname, "rb") as f:
-        for chunk in iter(lambda: f.read(4096), b""):
-            hash_md5.update(chunk)
-    return hash_md5.hexdigest()
-
-cp2077="REDprelauncher.exe"
-print(md5(cp2077))
+if __name__=='__main__':
+    k="globalenglish"
+    k=k.upper()
+    print("{0} {1} {2}".format(k[0],k[int(len(k)/2)-1],k[-1]))
