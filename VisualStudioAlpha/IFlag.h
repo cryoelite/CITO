@@ -28,7 +28,6 @@ class IFlag
 	wchar_t* screen;
 	double sinVal;
 	const inline static double PI = 2 * acos(0.0);
-
 	int axes;
 
 	COORD coord;
