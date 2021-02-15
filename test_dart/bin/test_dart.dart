@@ -1,6 +1,12 @@
-void main(List<String> arguments) {
-  var now = DateTime.now().microsecondsSinceEpoch;
-  var sq = 22 / 7;
-  var timeTaken = (DateTime.now().microsecondsSinceEpoch - now);
-  print('Time take: $timeTaken \n Number: $sq ');
+import 'dart:async';
+
+class Lox {
+  int val;
+  StreamController<int> streamController;
+  Timer timer;
+  Lox(this.streamController);
+}
+
+void main() {
+  print('yo');
 }

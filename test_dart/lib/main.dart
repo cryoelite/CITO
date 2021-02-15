@@ -1,3 +1,3 @@
-int calculate() {
-  return 1;
+void pp() {
+  print('yo');
 }
