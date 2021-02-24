@@ -1,0 +1,7 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\CITO1.exe.config
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\CITO1.exe
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\CITO1.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.csprojAssemblyReference.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.csproj.CoreCompileInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.exe
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.pdb

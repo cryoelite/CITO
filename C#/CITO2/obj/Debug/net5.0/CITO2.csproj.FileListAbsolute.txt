@@ -1,0 +1,16 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.exe
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.deps.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.runtimeconfig.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.runtimeconfig.dev.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\ref\CITO2.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\bin\Debug\net5.0\CITO2.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.csprojAssemblyReference.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.AssemblyInfoInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.AssemblyInfo.cs
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.csproj.CoreCompileInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\ref\CITO2.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO2\obj\Debug\net5.0\CITO2.genruntimeconfig.cache
