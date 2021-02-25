@@ -1,47 +1,30 @@
 ﻿using System;
-using System.Text;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace ProgFundamentals2  //DO NOT change the namespace name
+
+namespace AddNewMember              //Do not change the namespace name
 {
-    public class Program      //DO NOT change the class name
+    public class Club          //Do not change the class name
     {
-        public static void Main(string[] args)     //DO NOT change the 'Main' method signature
+
+        static Dictionary<int, string> groupInfo = new Dictionary<int, string>() { { 1, "Gold" }, { 2, "Silver" }, { 3, "Platinum" } };
+        static Dictionary<int, List<String>> memberInfo = new Dictionary<int, List<String>>() {
+                                    { 1, new List<string>(){ "Tom","Harry"} },
+                                    { 2,new List<string>(){ "Sam","Peter"} },
+                                    { 3,new List<string>(){ "Kim","Robert"} } };
+
+        public static void Main(string[] args)        //Do not change the method signature
         {
-            Console.WriteLine("Enter the number of teams:");
-            int teams = Convert.ToInt32(Console.ReadLine());
-            int[][] teamData = new int[teams][];
+            Console.WriteLine("Group Name :");
+            string gName = Console.ReadLine();
+            Console.WriteLine("Member Name:");
+            string mName = Console.ReadLine();
+            int key = groupInfo.First(x=>x.Value==gName).Key;
+            memberInfo[key].Add(mName);
+            foreach (var i in memberInfo[key])
+                Console.WriteLine(i);
 
-            for (int i = 0; i < teams; ++i)
-            {
-                Console.WriteLine("No.of attempts for team " + (i + 1) + ":");
-                teamData[i] = new int[Convert.ToInt32(Console.ReadLine())];
-            }
-            for (int i = 0; i < teams; ++i)
-            {
-                Console.WriteLine("Enter the score for team " + (i + 1) + ":");
-                for (int j = 0; j < teamData[i].Length; ++j)
-                {
-                    teamData[i][j] = Convert.ToInt32(Console.ReadLine());
-                }
-
-            }
-            Console.WriteLine(GetTotalScore(teamData));
-
-        }
-        public static String GetTotalScore(int[][] teamData)
-        {
-            int[] scores = new int[teamData.Length];
-            for(int i=0;i<teamData.Length;++i)
-            {
-                int temp = 0;
-                for (int j = 0; j < teamData[i].Length; ++j)
-                    temp += teamData[i][j];
-                scores[i] = temp;
-            }
-            var scoreOP = new StringBuilder();
-            for (int i = 0; i < scores.Length; ++i)
-                scoreOP.Append($"Team {i+1} Total Score is {scores[i]} . ");
-            return scoreOP.ToString();
         }
     }
 }
