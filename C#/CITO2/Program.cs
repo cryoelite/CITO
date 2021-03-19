@@ -1,30 +1,51 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 using System.Collections.Generic;
 using System.Linq;
 
-
-namespace AddNewMember              //Do not change the namespace name
+internal class SavingsAccount
 {
-    public class Club          //Do not change the class name
+   public int num;
+    public string pp;
+    public int ll;
+    public SavingsAccount(int one, string two, int three) => (num,pp,ll) = (one,two,three);
+
+}
+class Program
+{
+
+    public static void Main()
     {
 
-        static Dictionary<int, string> groupInfo = new Dictionary<int, string>() { { 1, "Gold" }, { 2, "Silver" }, { 3, "Platinum" } };
-        static Dictionary<int, List<String>> memberInfo = new Dictionary<int, List<String>>() {
-                                    { 1, new List<string>(){ "Tom","Harry"} },
-                                    { 2,new List<string>(){ "Sam","Peter"} },
-                                    { 3,new List<string>(){ "Kim","Robert"} } };
+        /*WebClient client = new WebClient();
 
-        public static void Main(string[] args)        //Do not change the method signature
+        // Add a user agent header in case the
+        // requested URI contains a query.
+
+        client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
+
+        Stream data = client.OpenRead("https://na.finalfantasyxiv.com/lodestone/worldstatus/");
+        StreamReader reader = new StreamReader(data);
+        string s = reader.ReadToEnd();
+        Console.WriteLine(s);
+        data.Close();
+        reader.Close();*/
+        GetAccountDetails("details.txt");
+    }
+
+
+    public static void GetAccountDetails(String filename)
+    {
+        string[] lines = System.IO.File.ReadAllLines(filename);
+        List<SavingsAccount> savingsList = new List<SavingsAccount>();
+        foreach (var line in lines)
         {
-            Console.WriteLine("Group Name :");
-            string gName = Console.ReadLine();
-            Console.WriteLine("Member Name:");
-            string mName = Console.ReadLine();
-            int key = groupInfo.First(x=>x.Value==gName).Key;
-            memberInfo[key].Add(mName);
-            foreach (var i in memberInfo[key])
-                Console.WriteLine(i);
-
+            string[] text = line.Split(",");
+            savingsList.Add(new SavingsAccount(Convert.ToInt32(text[0].Trim()), text[1].Trim(), Convert.ToInt32(text[2].Trim())));
         }
+        Console.WriteLine("All Account Details Added To List Successfully");
+        Console.WriteLine(savingsList[2].pp);
+        filecontent= System.IO.File.ReadAllText(filename);
     }
 }

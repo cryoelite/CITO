@@ -12,20 +12,20 @@ int dirIterator(directory_iterator dir1, int lineCount = 0)
 
 		auto dir = *dir1++;
 		auto pathObj = dir.path();
-		if (pathObj.filename().string()[0] != '.') {
+		if (pathObj.filename().string()[0] != '.'){
 			if (pathObj.has_extension())
 			{
 
 				auto filePath = dir.path();
-				auto fileExtension = filePath.extension();
+					auto fileExtension = filePath.extension();
 
-				if (fileExtension == ".dart")
-				{
-					ifstream fileObject{ filePath };
-					string line;
-					while (!getline(fileObject, line).eof())
-						++lineCount;
-				}
+					if (fileExtension == ".dart")
+					{
+						ifstream fileObject{ filePath };
+							string line;
+							while (!getline(fileObject, line).eof())
+								++lineCount;
+					}
 			}
 			else {
 
@@ -33,7 +33,7 @@ int dirIterator(directory_iterator dir1, int lineCount = 0)
 				lineCount = dirIterator(dir2, lineCount);
 			}
 		}
-
+		
 	}
 
 	return lineCount;

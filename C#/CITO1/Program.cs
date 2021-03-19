@@ -1,41 +1,33 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+// Compiler version 4.0, .NET Framework 4.5
 
-public class PP<T>
+
+namespace Dcoder
 {
-    private T[] one = new T[5];
-    public T this [int index]
+    public class Program
     {
-        get
+        public static void Main(string[] args)
         {
-            return one[index];
-        }
-        set
-        {
-            one[index] = value;
-        }
-    }
+            //Your code goes here
+            bool shouldResume = true;
+            while (shouldResume)
+            {
+                Console.WriteLine("Enter Company Name and Registration Date information seperated by comma (,):");
+                string inp = Console.ReadLine();
+                string[] inpList = inp.Split(',');
+                string name = inpList[0];
+                string date = inpList[1];
 
-    public (T,string) this[int index, string index2]
-    {
-        get
-        {
-            return (one[index], "s");
+                string[] dateListString = date.Split('-');
+                int[] dateList=new int[3];
+                foreach (var x in dateListString)
+                    dateList.Append(Convert.ToInt32(x));
+                DateTime dateTime = Convert.ToDateTime(date);
+                Console.WriteLine(dateTime);
+            }
         }
-        set
-        {
-            (one[index],_) = value;
-        }
-    }
-
-}
-
-class Program
-{
-    public static int pp() => 2;
-    static void Main()
-    {
-       
-        Console.WriteLine(String.Format("Yo {0} {0}",1));
     }
 }
-

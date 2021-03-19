@@ -6,7 +6,8 @@ description: A sample command-line application.
 environment:
   sdk: '>=2.10.0 <3.0.0'
 
-#dependencies:
+dependencies:
+  aes_crypt: ^0.1.1
 #  path: ^1.7.0
 
 dev_dependencies:
