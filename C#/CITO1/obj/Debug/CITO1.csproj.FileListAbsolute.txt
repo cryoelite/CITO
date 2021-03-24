@@ -5,3 +5,8 @@ C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.csprojAss
 C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.csproj.CoreCompileInputs.cache
 C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.exe
 C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\EntityFramework.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\EntityFramework.xml
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO1\obj\Debug\CITO1.csproj.CopyComplete
