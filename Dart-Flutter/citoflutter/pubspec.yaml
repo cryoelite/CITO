@@ -11,16 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  firebase_core: ^0.5.3
-  firebase_analytics: ^6.3.0
-  firebase_auth: ^0.18.4+1
-  cloud_firestore: ^0.14.4
   adobe_xd: ^1.0.0+1
   google_fonts: ^1.1.1
-  
+  flutter_local_notifications: ^4.0.1+2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/assets/bhavupdate.mp3

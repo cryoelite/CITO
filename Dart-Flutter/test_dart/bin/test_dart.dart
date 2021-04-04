@@ -1,14 +1,18 @@
-import 'dart:convert';
-import 'dart:io';
+Iterable<int> dec(int x) sync* {
+  if (x > 0) {
+    yield* dec2(x - 1);
+  }
 
-Future<void> main() async {
-  final output = File('output.txt').openWrite();
-  final process = await Process.start('ping', ['8.8.8.8']);
-  var lineStream =
-      process.stdout.transform(Utf8Decoder()).transform(LineSplitter());
+  yield x;
+}
 
-  await process.stdout.pipe(output);
+Iterable<int> dec2(int x) sync* {
+  yield x * 2;
+}
 
-  await process.stderr.drain();
-  print('exit code: ${await process.exitCode}');
+void main() {
+  var value = dec(3);
+  for (var event in value) {
+    print('In main x is $event ');
+  }
 }

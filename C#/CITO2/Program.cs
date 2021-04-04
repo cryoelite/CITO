@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 public class SContext : DbContext
 {
     public SContext() { }
@@ -10,7 +11,7 @@ public class SContext : DbContext
     public DbSet<StudentAddress> StudentAddresss { get; set; }
 
 }
-
+[Table("")]
 public class Student
 {
     public string Name { get; set; }

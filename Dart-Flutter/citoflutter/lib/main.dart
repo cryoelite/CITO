@@ -1,10 +1,36 @@
 import 'package:flutter/material.dart';
-import 'dart:math' show pow;
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-main() {
+FlutterLocalNotificationsPlugin _flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await _initializeSettings();
   runApp(MaterialApp(
     home: Page1(),
   ));
+}
+
+Future<void> _initializeSettings() async {
+  const AndroidInitializationSettings _initializationSettingsAndroid =
+      AndroidInitializationSettings('app_icon');
+
+  final InitializationSettings initializationSettings = InitializationSettings(
+    android: _initializationSettingsAndroid,
+  );
+
+  await _flutterLocalNotificationsPlugin.initialize(initializationSettings,
+      onSelectNotification: selectNotification);
+}
+
+Future<void> selectNotification(String payload) async {
+  if (payload != null) {
+    debugPrint('notification payload: $payload');
+  }
+  /* await Navigator.push(
+    context,
+    MaterialPageRoute<void>(builder: (context) => SecondScreen(payload)),
+  ); */
 }
 
 class Page1 extends StatefulWidget {
@@ -19,63 +45,41 @@ class _Page1State extends State<Page1> {
   double z = 0.0;
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Transform(
-          transform: Matrix4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, x, y, z, 1)
-            ..setEntry(3, 2, 0.001)
-            ..rotateX(x)
-            ..rotateY(y)
-            ..rotateZ(z),
-          alignment: FractionalOffset.center,
-          child: GestureDetector(
-            onDoubleTap: () => Navigator.of(context).push(_createRoute()),
-            onPanUpdate: (details) {
-              setState(() {
-                print("oan and $x $y $z");
-
-                x = x + details.delta.dy / 100;
-                y = y - details.delta.dx / 100;
-              });
-            },
-            child: Container(
-              height: 120,
-              width: 120,
-              color: Colors.red,
+      backgroundColor: Colors.white,
+      body: SafeArea(child: LayoutBuilder(
+        builder: (context, constraints) {
+          return Container(
+            width: constraints.maxWidth,
+            height: constraints.maxHeight,
+            child: Center(
+              child: InkWell(
+                onTap: () async => await pushCustomSoundNotification(),
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.red,
+                ),
+              ),
             ),
-          ),
-        ),
-      ),
+          );
+        },
+      )),
     );
   }
-}
 
-Route _createRoute() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page2(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      Offset begin = Offset(1, 0);
-      Offset end = Offset(0, 0);
-      Curve curve = Curves.bounceIn;
-      Animatable<Offset> tween =
-          Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-      Animation offsetAnimation = animation.drive(tween);
-
-      return SlideTransition(
-        position: animation.drive(tween),
-        child: child,
-      );
-    },
-  );
-}
-
-class Page2 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Text('Page 2'),
-      ),
-    );
+  Future<void> pushCustomSoundNotification() async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+            'your channel id', 'your channel name', 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            playSound: true,
+            sound: RawResourceAndroidNotificationSound('bhavupdate'),
+            showWhen: false);
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await _flutterLocalNotificationsPlugin.show(
+        0, 'plain title', 'plain body', platformChannelSpecifics,
+        payload: 'item x');
   }
 }
