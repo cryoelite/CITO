@@ -1,0 +1,13 @@
+output: lib\GeneratedCronetBindings.dart
+llvm-path:
+  - 'C:\Program Files\LLVM'
+headers:
+  entry-points:
+    - 'cronet/**.h'
+functions:
+  symbol-address:
+    include:
+      - '.*'
+dart-bool: false
+name: 'CronetDart'
+description: 'Cronet for Dart' 
