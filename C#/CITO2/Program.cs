@@ -4,14 +4,14 @@ using System.Data.SqlClient;
 
 
 
-namespace PP
+namespace Kell
 {
 
     public class Connect
     {
-        SqlConnection _con = null;
-        SqlCommand _cmd = null;
-        int _reader = 0;
+        SqlConnection _con;
+        SqlCommand _cmd;
+
         SqlTransaction _transaction;
 
         public Connect()
@@ -20,17 +20,22 @@ namespace PP
             _con = new SqlConnection(_conString);
         }
 
+        private void connectDB()
+        {
+            if (_con.State == System.Data.ConnectionState.Closed || _con.State != System.Data.ConnectionState.Open)
+                _con.Open();
+        }
+
         public void initDB()
         {
-            _cmd = new SqlCommand("create table StuDB (PersonID int, FirstName varchar(255),LastName varchar(255) );");
             try
             {
-                if (_con.State == System.Data.ConnectionState.Closed)
-                    _con.Open();
-                _con.BeginTransaction();
-                _reader = _cmd.ExecuteNonQuery();
+                connectDB();
+                _transaction = _con.BeginTransaction();
+                _cmd = new SqlCommand("create table HelloWorld(PersonID int);", _con, _transaction);
+                _cmd.ExecuteNonQuery();
                 _transaction.Commit();
-
+                _con.Close();
             }
             catch (SqlException ex)
             {
@@ -38,8 +43,16 @@ namespace PP
                 _transaction.Rollback();
             }
         }
+
+        public void displayDB()
+        {
+            connectDB();
+            _transaction = _con.BeginTransaction();
+            _cmd = new SqlCommand("Select * from HelloWorld where ");
+
+        }
     }
-    public class Default
+    public class CITO
     {
         public static void Main()
         {

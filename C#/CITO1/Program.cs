@@ -1,41 +1,18 @@
-using System;
-using System.Data.Entity;
-using System.Collections.Generic;
+﻿using System;
 
-public class SContext : DbContext
+namespace CITO1
 {
-    public SContext() { }
-
-    public DbSet<Student> Students { get; set; }
-    public DbSet<StudentAddress> StudentAddresss { get; set; }
-
-}
-
-public class Student
-{
-    public string Name { get; set; }
-    public int RollNo { get; set; }
-}
-
-public class StudentAddress
-{
-    public List<int> HouseNos { get; set; }
-}
-
-
-public class Heya
-
-{
-
-
-
-    public static void Main()
+    class Program
     {
-        SContext context = new SContext();
-        context.Students.Add(new Student() { Name = "Ak", RollNo = 12 });
-        context.SaveChanges();
-
-
-        Console.WriteLine("Lol");
+        static void Main(string[] args)
+        {
+            EFTest efContext = new EFTest();
+            Department department = new Department { EmpName = "Rahul", EmpPhone = 123456 };
+  
+            efContext.Departments.Add(department);
+            
+            efContext.SaveChanges();
+            Console.WriteLine("Hello World!");
+        }
     }
 }

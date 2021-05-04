@@ -1,0 +1,6 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\bin\Debug\CITOClassLibrary.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\bin\Debug\CITOClassLibrary.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\obj\Debug\CITOClassLibrary.csprojAssemblyReference.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\obj\Debug\CITOClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\obj\Debug\CITOClassLibrary.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOClassLibrary\obj\Debug\CITOClassLibrary.pdb

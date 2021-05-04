@@ -1,0 +1,16 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\CITOTester.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\CITOTester.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\CITOClassLibrary.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\CITOClassLibrary.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\obj\Debug\CITOTester.csprojAssemblyReference.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\obj\Debug\CITOTester.csproj.CoreCompileInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\obj\Debug\CITOTester.csproj.CopyComplete
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\obj\Debug\CITOTester.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITOTester\obj\Debug\CITOTester.pdb
