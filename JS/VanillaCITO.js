@@ -1,7 +1,24 @@
+
 'use strict';
 
-let pos=2;
-setTimeout(()=> console.log(`value is ${pos}`),1000);
-pos=3;
+class A{
+    name="yo";
+    nn(){
+        console.log("ss");
+    };
+    constructor (value){
+        if(value)
+            console.log(this.name);
+        else
+            this.nn();
+    }
+}
+class B extends A{
+    name="popo";
+    nn(){
+        console.log("Yo");
+    }
+}
 
-console.log(`The end`);
+new B(1);
+new A(1);

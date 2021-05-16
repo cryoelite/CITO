@@ -1,48 +1,26 @@
 #include <iostream>
-#include <filesystem>
-#include <fstream>
 
-using namespace std;
-using namespace filesystem;
-int dirIterator(directory_iterator dir1, int lineCount = 0)
-{
-
-	while (dir1 != directory_iterator())
-	{
-
-		auto dir = *dir1++;
-		auto pathObj = dir.path();
-		if (pathObj.filename().string()[0] != '.') {
-			if (pathObj.has_extension())
-			{
-
-				auto filePath = dir.path();
-				auto fileExtension = filePath.extension();
-
-				if (fileExtension == ".dart")
-				{
-					ifstream fileObject{ filePath };
-					string line;
-					while (!getline(fileObject, line).eof())
-						++lineCount;
-				}
-			}
-			else {
-
-				auto dir2 = directory_iterator(pathObj);
-				lineCount = dirIterator(dir2, lineCount);
-			}
-		}
-
+int test() {
+	auto a{ 2 };
+		return a++;
 	}
 
-	return lineCount;
+int test2() {
+	auto a{ 3 };
+	return ++a;
 }
 
+int test3() {
+	auto a{ 4 };
+	a += 1;
+	return a;
+}
 int main()
 {
-	auto folderPath = filesystem::current_path();
-	auto dir1 = directory_iterator(folderPath);
-	cout << "Line count is : " << dirIterator(dir1) << endl;
+	auto a1{ test() };
+	auto a2{ test2() };
+	auto a3{ test3() };
+	std::cout << "Values are " << a1 << " " << a2 << " " << a3<<std::endl;
+	
 	return 0;
 }
