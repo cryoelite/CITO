@@ -1,34 +1,45 @@
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-import time
+def number_of_decodings_fast(code):
+    """ Dynamic programming implementation which runs in 
+    O(n) time and O(1) space. 
+    The implementation is very similar to the dynamic programming
+    solution for the Fibonacci series. """
+    length = len(code)
+    if (length <= 1):
+        # assume all such codes are unambiguously decodable
+        return 1
+    else:
+        n_prev = 1 # len 0
+        n_current = 1 # len 1
+        for i in range(1,length):
+            if (
+                # a '1' is ambiguous if followed by
+                # a digit X=[1-9] since it could be
+                # decoded as '1X' or '1'+'X'
+                code[i-1]=='1' and 
+                code[1] in [str(k) for k in (range(1,10))]
+            ) or (
+                # a '2' is ambiguous if followed by 
+                # a digit X=[1-6] since it could be
+                # decoded as '2X' or '2'+'X'
+                code[i-1]=='2' and 
+                code[i] in [str(k) for k in range(1,7)]
+            ):
+                # New number of decodings is the sum of
+                # decodings obtainable from the code two digits back
+                # (code[0:(i-2)] + '[1-2]X' interpretation)
+                # and decodings obtainable from the code one digit back
+                # (code[0:(i-1)] + 'X' interpretation).
+                n_new = n_prev + n_current
+            else:
+                # New number of decodings is the same as
+                # that obtainable from the code one digit back
+                # (code[0:(i-1)] + 'X' interpretation).
+                n_new = n_current
+            # update n_prev and n_current
+            n_prev = n_current
+            n_current = n_new
+        return n_current
 
-driver = webdriver.Chrome('./chromedriver')
-driver.get("https://web.whatsapp.com/")
 
-# Note that the content in the whatsappSite is genertated dynamically by the JS engine
-# So one has to was wait till the Js content is loaded in the source
-# "WebDriverWait" is set to wait for .6s before any action begins.
-# So the follwing is variable os set.
-wait = WebDriverWait(driver, 600)
-
-# Set the taget and the target message
-target = '"Your friend name on the whatsapp contact list"'
-string = "Your message goes here"
-
-# Waits for the Desired contact to load and selects it
-x_arg = '//span[contains(@title,' + target + ')]'
-group_title = wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
-group_title.click()
-
-# Specifies the location of the input box in the page.
-# 'Inspect element' on the message input field of the webpage for further clarification
-inp_xpath = '//div[@class="input"][@dir="auto"][@data-tab="1"]'
-input_box = wait.until(EC.presence_of_element_located((By.XPATH, inp_xpath)))
-
-# Enters the string in the input box and send it desired number of times.
-for i in range(20):
-    input_box.send_keys(string + Keys.ENTER)
-    time.sleep(1)
+b=raw_input()
+print(number_of_decodings_fast(b))

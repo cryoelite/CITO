@@ -1,18 +1,10 @@
-Iterable<int> dec(int x) sync* {
-  if (x > 0) {
-    yield* dec2(x - 1);
-  }
-
-  yield x;
-}
-
-Iterable<int> dec2(int x) sync* {
-  yield x * 2;
-}
-
-void main() {
-  var value = dec(3);
-  for (var event in value) {
-    print('In main x is $event ');
-  }
+import 'dart:h';
+void main() async {
+  final queryParams = {'q': 'database', 'data': 'cow'};
+  final url = 'www.techopedia.com';
+  final charactersPath = '/search.aspx';
+  final uri = Uri.https(url, charactersPath, queryParams);
+  uri.queryParameters.forEach((key, value) {
+    print('$key key with $value value');
+  });
 }

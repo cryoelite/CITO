@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf8"></meta>
-        <title>CITO HTML</title>
-        <script src="VanillaCITO.js">            
-        </script>
-    </head>
+
+<head>
+  <meta charset="utf8">
+  </meta>
+  <title>CITO HTML</title>
+</head>
 <body>
-<h1>My Header</h1>
-<p id="aloo">My paragraph.</p>
+  <div id="lmao">
+    truck
+    <i>
+      potato
+    </i>
+    <b>
+      tomato
+      <i>
+        aloo
+      </i>
+    </b>
+    <i>
+      car
+    </i>
+  </div>
+  <script>
+    let range = new Range();
+    range.setStart(document.getElementById("lmao"), 0)
+    range.setEnd(document.getElementById("lmao"), 3)
+    console.log(range.collapsed);
+    let selection=document.getSelection();
+    selection.addRange(range);
+  </script>
 </body>
 </html>

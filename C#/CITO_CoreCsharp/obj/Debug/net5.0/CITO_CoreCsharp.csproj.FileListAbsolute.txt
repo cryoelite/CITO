@@ -1,0 +1,16 @@
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.csproj.AssemblyReference.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.AssemblyInfoInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.AssemblyInfo.cs
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.csproj.CoreCompileInputs.cache
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.exe
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.deps.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.runtimeconfig.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.runtimeconfig.dev.json
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\ref\CITO_CoreCsharp.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\bin\Debug\net5.0\CITO_CoreCsharp.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\ref\CITO_CoreCsharp.dll
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.pdb
+C:\Users\millify\Documents\GitHub\CodeITestOn\C#\CITO_CoreCsharp\obj\Debug\net5.0\CITO_CoreCsharp.genruntimeconfig.cache

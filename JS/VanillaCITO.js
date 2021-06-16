@@ -1,24 +1,7 @@
-
 'use strict';
-
-class A{
-    name="yo";
-    nn(){
-        console.log("ss");
-    };
-    constructor (value){
-        if(value)
-            console.log(this.name);
-        else
-            this.nn();
-    }
+let obj={
+    name:"a",
 }
-class B extends A{
-    name="popo";
-    nn(){
-        console.log("Yo");
-    }
-}
+let elem=[obj,obj]
+console.log(elem);
 
-new B(1);
-new A(1);
