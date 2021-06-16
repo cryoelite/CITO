@@ -1,8 +1,3 @@
-from urllib.parse import urlparse
-from flask import Flask, jsonify, request
-import json
-from time import time
-from uuid import uuid4
 import hashlib
 """
 A library that holds various functions useful for hashing.
@@ -11,23 +6,26 @@ import requests
 """
 Simple and elegant HTTP library for Python.
 """
+from uuid import uuid4
 """
 Creates immutable UUID objects, generates a unique id per call.
 """
+from time import time
 """
 This module provides various time-related functions. 
 """
+import json
 """
 Allows parsing of JSON objects in Python.
 """
+from flask import Flask, jsonify, request
 """
 Flask is a Python web framework built with a small core and easy-to-extend philosophy.
 """
+from urllib.parse import urlparse
 """
 Allows parsing of urls in Python.
 """
-
-
 class Blockchain:
     def __init__(self):
         self.nodes = set()
@@ -37,18 +35,16 @@ class Blockchain:
     """
     Default Constructor for our Blockchain
     """
-
     def create_transaction(self, sender, recipient, amount):
         self.current_transactions.append({
-            'sender': sender,
-            'recipient': recipient,
-            'amount': amount,
+        'sender': sender,
+        'recipient': recipient,
+        'amount': amount,
         })
         return self.last_block['index'] + 1
     """
     Creates a transaction
     """
-
     def conflict_resolver(self):
         neighbours = self.nodes
         new_chain = None
@@ -68,7 +64,6 @@ class Blockchain:
     """
     In case of conflict, this block will calculate the proof of work hashes and then for valid chains compare their length and choose the longest chain
     """
-
     def create_block(self, proof, previous_hash):
         block = {
             'index': len(self.chain) + 1,
@@ -80,7 +75,8 @@ class Blockchain:
         self.current_transactions = []
         self.chain.append(block)
         return block
-
+        
+    
     def node_register(self, address):
         parsed_url = urlparse(address)
         if parsed_url.netloc:
@@ -130,11 +126,9 @@ class Blockchain:
             current_index += 1
         return True
 
-
 app = Flask(__name__)
 node_identifier = str(uuid4()).replace('-', '')
 blockchain = Blockchain()
-
 
 @app.route('/mine', methods=['GET'])
 def mine_block():
@@ -156,7 +150,6 @@ def mine_block():
     }
     return jsonify(response), 200
 
-
 @app.route('/transactions/new', methods=['POST'])
 def add_transaction():
     values = request.get_json()
@@ -168,7 +161,6 @@ def add_transaction():
     response = {'message': f'Transaction will be added to Block {index}'}
     return jsonify(response), 201
 
-
 @app.route('/chain', methods=['GET'])
 def full_blockchain():
     response = {
@@ -176,7 +168,6 @@ def full_blockchain():
         'length': len(blockchain.chain),
     }
     return jsonify(response), 200
-
 
 @app.route('/nodes/register', methods=['POST'])
 def node_register():
@@ -191,7 +182,6 @@ def node_register():
         'total_nodes': list(blockchain.nodes),
     }
     return jsonify(response), 201
-
 
 @app.route('/nodes/resolve', methods=['GET'])
 def generate_consensus():
@@ -208,13 +198,11 @@ def generate_consensus():
         }
 
     return jsonify(response), 200
-
-
 if __name__ == '__main__':
     from argparse import ArgumentParser
     argParser = ArgumentParser()
     argParser.add_argument('-p', '--port', default=5000,
-                           type=int, help='port to listen at')
+                        type=int, help='port to listen at')
     arguments = argParser.parse_args()
     currentPort = arguments.port
     app.run(host='0.0.0.0', port=currentPort)
