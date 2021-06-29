@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\millify\Documents\GitHub\TestCode\VisualStudioAlpha\main.cpp(6,20): error C7525: inline variables require at least '/std:c++17'
+C:\Users\millify\Documents\GitHub\TestCode\VisualStudioAlpha\main.cpp(6,26): error C2864: 'P::c': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\millify\Documents\GitHub\TestCode\VisualStudioAlpha\main.cpp(6,26): message : type is 'int'
