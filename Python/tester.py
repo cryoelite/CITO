@@ -1,4 +1,12 @@
+url="https://api.flutter.dev/flutter/widgets/AndroidView-class.html"
 
 
-a="hi {name}".format(name="ya")
-print(a)
+
+def func(a=3):
+    print(a)
+    def func2():
+        a=4
+        print(a)
+    func2()
+
+func()

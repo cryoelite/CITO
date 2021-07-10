@@ -1,15 +1,13 @@
 const http = require("https");
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 const options = {
 	"method": "GET",
-	"hostname": "contextualwebsearch-websearch-v1.p.rapidapi.com",
+	"hostname": "api.flutter.dev",
 	"port": null,
-	"path": "/api/Search/ImageSearchAPI?q=taylor%20swift&pageNumber=1&pageSize=10&autoCorrect=true",
-	"headers": {
-		"x-rapidapi-key": "50876695a7mshf62b04ac4169fb9p16fd72jsn5cb2a7b054df",
-		"x-rapidapi-host": "contextualwebsearch-websearch-v1.p.rapidapi.com",
-		"useQueryString": true
-	}
+	"path": "/flutter/widgets/AbsorbPointer-class.html",
+	
 };
 
 const req = http.request(options, function (res) {
@@ -21,7 +19,15 @@ const req = http.request(options, function (res) {
 
 	res.on("end", function () {
 		const body = Buffer.concat(chunks);
-		console.log(body.toString());
+		let page= new JSDOM(body);
+		let items=page.window.document.getElementsByTagName('ol')[2].children;
+		let itemsList=[];
+		for(let elem of items)
+			itemsList.push(elem.textContent);
+		itemsList.sort();
+		for(let elem of itemsList)
+			console.log(elem)
+		
 	});
 });
 

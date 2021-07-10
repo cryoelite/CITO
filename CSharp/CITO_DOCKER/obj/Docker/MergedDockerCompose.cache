@@ -1,0 +1,28 @@
+services:
+  db:
+    container_name: db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      MSSQL_SA_PASSWORD: '''Portfolio1@3'
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+  someting:
+    build:
+      context: C:\Users\millify\Documents\GitHub\CodeITestOn\CSharp\CITO_DOCKER
+      dockerfile: someting/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: someting
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\millify\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'

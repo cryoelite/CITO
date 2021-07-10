@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\millify\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\millify\\.nuget\\packages"
+    ]
+  }
+}

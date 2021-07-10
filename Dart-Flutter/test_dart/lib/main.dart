@@ -1,3 +1,0 @@
-void pp() {
-  print('yo');
-}

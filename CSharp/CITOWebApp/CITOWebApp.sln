@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CITOWebApp", "CITOWebApp.csproj", "{071AD5A9-571A-4FCA-8B19-919CA0D68CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XTZ", "..\XTZ\XTZ.csproj", "{4AC3E29D-9ED4-408E-89B9-C1DA9D2B3245}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{071AD5A9-571A-4FCA-8B19-919CA0D68CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071AD5A9-571A-4FCA-8B19-919CA0D68CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071AD5A9-571A-4FCA-8B19-919CA0D68CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071AD5A9-571A-4FCA-8B19-919CA0D68CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC3E29D-9ED4-408E-89B9-C1DA9D2B3245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC3E29D-9ED4-408E-89B9-C1DA9D2B3245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC3E29D-9ED4-408E-89B9-C1DA9D2B3245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC3E29D-9ED4-408E-89B9-C1DA9D2B3245}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D41C8F07-8BD6-46C6-BF10-9456D7CADC21}
+	EndGlobalSection
+EndGlobal
