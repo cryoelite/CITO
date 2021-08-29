@@ -2,6 +2,8 @@
   "dependencies": {
     "https": "^1.0.0",
     "jsdom": "^16.6.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^10.1.0",
+    "spotify-dl": "^1.0.4"
   }
 }
