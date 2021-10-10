@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using CITOWebApp.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace CITOWebApp
 {
@@ -54,7 +55,22 @@ namespace CITOWebApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                //endpoints.MapRazorPages();
+
+                endpoints.MapGet("/hooo/{id}", async context=> {
+                    context.Response.StatusCode = 200;
+                    var str = "Yoo";
+                    var obj = context.Request.Query.Keys;
+                    foreach(var elem in obj)
+                    {
+                        str += $"\n{elem}";
+                    }
+
+                    await context.Response.WriteAsync("Yi fit mama" + str);
+                    
+                    await context.Response.CompleteAsync();
+                
+                });
             });
         }
     }
