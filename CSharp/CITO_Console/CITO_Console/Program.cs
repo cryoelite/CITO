@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
+using DiffMatchPatch;
 
 namespace CITO_Console
 {
@@ -8,11 +9,29 @@ namespace CITO_Console
 	{
 		public static void Main()
 		{
-			var list = new List<int>() { 1, 2, 3, 4, 5 };
-			var list2 = list.ToArray()[^2..];
-			foreach (var elem in list2)
+			var dmp= new diff_match_patch();
+			while (true)
 			{
-				Console.WriteLine(elem);
+				Console.Clear();
+				Console.WriteLine("Enter 2 texts seperated by enter");
+				var input1 = Console.ReadLine().Trim().Replace(" ","");
+				
+				var input2 = Console.ReadLine().Trim().Replace(" ", "");
+				var diff = dmp.diff_main(input1, input2);
+				var result=dmp.diff_levenshtein(diff);
+
+				Console.WriteLine("Result = " + result);
+				double similarity = 100 - ((double)result / Math.Max(input1.Length, input2.Length) * 100);
+				Console.WriteLine("Similarity = " + similarity);
+
+				Console.WriteLine("Insert 'q' and then press enter to exit");
+				var input3 = Console.ReadLine().Trim().Replace(" ", "");
+
+				if (input3 == "q")
+				{
+					break;
+				}
+
 			}
 		}
 	}
