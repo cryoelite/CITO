@@ -1,0 +1,105 @@
+{
+	"splash_heading: "Tus ahorros están a salvo",
+
+	"solutionsHeading: "Soluciones",
+
+	"careersHeading: "Carreras",
+
+	"blogHeading: "Blog",
+
+	"contactHeading: "Contacto",
+
+	"bookConsultation: "Consulta de libro",
+
+	"learnMore: "Aprende más",
+
+	"mainText1: "Soluciones de inteligencia artificial para decisiones empresariales inteligentes basadas en datos",
+	"subMainText1: "Ofrecemos consultoría de inteligencia artificial y desarrollo de productos para todas las industrias, lo que lo ayuda a aprovechar la inteligencia artificial para tomar decisiones seguras e informadas que impulsan su negocio hacia adelante.",
+
+	"mainText2: "Sabe que necesita comenzar a aprovechar la inteligencia artificial en su negocio. ¿Pero donde? ¿Y cómo?",
+	"subMainText2: "Sin una perspectiva externa, es difícil saber por dónde empezar. Nuestros expertos en consultoría de inteligencia artificial trabajan con usted para identificar sus problemas clave y aplicar soluciones digitales y de inteligencia artificial comprobadas que obtienen resultados tangibles.",
+
+	"mainText3: "Incremento de ingresos",
+	"subMainText3: "La inteligencia artificial puede identificar patrones y tendencias en el comportamiento del consumidor y las ventas, lo que le ayuda a saber cuándo y cómo hacer pivotar su estrategia comercial para maximizar los retornos.",
+
+	"mainText4: "Procesos más eficientes",
+	"subMainText4: "Toda empresa tiene lagunas en los procesos y redundancias. Aproveche la inteligencia artificial para identificar ineficiencias y optimizar sus flujos de trabajo.",
+
+	"mainText5: "Toma de decisiones informada",
+	"subMainText5: "Sin datos de su lado, tendrá que depender de su instinto para tomar decisiones comerciales críticas. Los conocimientos de datos basados ​​en inteligencia artificial le brindan la información que necesita para avanzar con confianza.",
+
+	"mainText6: "Estructura de datos mejorada",
+	"subMainText6: "Muchos datos, pero ¿no estás seguro de qué hacer con ellos? La inteligencia artificial lo ayuda a organizar, almacenar, integrar y controlar sus datos en toda su empresa.",
+
+	"mainText7: "Industrias a las que hemos ayudado",
+	"options7_1: "Recursos naturales",
+	"options7_2: "Salud",
+	"options7_3: "Financiero",
+	"options7_4: "Gas de petróleo",
+	"options7_5: "Seguro",
+	"options7_6: "Cadena de suministro",
+	"options7_7: "Transporte",
+	"options7_8: "Aerolínea",
+
+
+	"mainText8: "Transformamos datos para solucionar problemas empresariales reales",
+	"subMainText8_1: "Enfoque holístico",
+	"subMainText8_1_1: "A veces, el problema visible es el resultado de un problema oculto más grande. Analizamos su negocio en su conjunto para identificar dónde podemos generar el mayor impacto y generar el mayor valor.",
+	"subMainText8_2: "Técnicas patentadas",
+	"subMainText8_2_1: "La IA es poderosa, pero debes saber cómo aprovecharla. Aplicamos nuestras técnicas de inteligencia artificial únicas y servicios de análisis avanzados para resolver problemas complejos.",
+	"subMainText8_3: "Fundamento científico",
+	"subMainText8_3_1: "Muchas empresas afirman ser expertas en inteligencia artificial. Pocos tienen la base científica para respaldarlo. Hemos construido nuestra propia base analítica a partir de la teoría y aplicamos un enfoque científico probado a cada proyecto.",
+	"subMainText8_4: "Soluciones personalizadas",
+	"subMainText8_4_1: "Sabemos que cada cliente tiene un presupuesto y capacidades internas diferentes. Es por eso que personalizamos nuestros servicios para su situación particular. Puede trabajar con nosotros tanto o tan poco como necesite.",
+
+	"mainText9: "¿Cómo podemos ayudar?",
+	"subMainText9: "Desde la evaluación analítica inicial hasta la solución completa del producto, adaptamos nuestros servicios a sus necesidades comerciales.",
+
+	"mainText10: "Consultoría de gestión",
+	"subMainText10_1: "Descubrimiento de IA",
+	"subMainText10_2: "Planos de IA personalizados",
+
+
+	"mainText11: "Desarrollo de productos de IA",
+	"subMainText11_1: "Diseño de producto",
+	"subMainText11_2: "Desarrollo de productos",
+	"subMainText11_3: "Apoyo continuo",
+
+
+
+	"mainText12: "Comprometidos a ayudarlo a comprender los datos",
+	"subMainText12_1: "Nuestra misión",
+	"subMainText12_1_1: "Resolver problemas mundiales y tener un impacto positivo en la vida de las personas aprovechando la inteligencia artificial e impulsando la innovación.",
+	"subMainText12_2: "Nuestra visión",
+	"subMainText12_2_1: "Brindar al mundo soluciones de toma de decisiones inteligentes, éticas y accesibles.",
+
+
+
+	"mainText13: "Nuestros compañeros",
+
+	"mainText14: "¿Está listo para ver cómo la inteligencia artificial puede transformar su negocio?",
+
+	"review1: "Creemos que la IA puede ayudar a las organizaciones a crecer rápidamente y operar de manera eficiente. La IA es una técnica fundamental que nos ayuda a tomar decisiones inteligentes y basadas en datos.",
+	"review1By: "Farnoush Farnia",
+	"review1Cred: "Socio mayoritario",
+
+	"headOffice: "Oficina central",
+	"privacyPolicy: "Política de privacidad",
+	"termsofUse: "Términos de Uso",
+
+	"mainText15: "Reserve su consulta gratuita",
+	"subMainText15: "Complete el formulario a continuación para reservar su consulta gratuita con uno de nuestros expertos en negocios y descubra cómo Intelius puede ayudarlo a aprovechar la inteligencia artificial para transformar su negocio.",
+
+	"mainText16: "Incrementa tus ingresos",
+	"subMainText16: "La inteligencia artificial puede identificar patrones y tendencias en el comportamiento del consumidor y las ventas, lo que le ayuda a saber cuándo y cómo hacer pivotar su estrategia comercial para maximizar los retornos.",
+
+	"mainText17: "Procesos más eficientes",
+	"subMainText17: "Toda empresa tiene lagunas en los procesos y redundancias. Aproveche la inteligencia artificial para identificar ineficiencias y optimizar sus flujos de trabajo.",
+
+	"mainText18: "Toma de decisiones informada",
+	"subMainText18: "Sin datos de su lado, tendrá que depender de su instinto para tomar decisiones comerciales críticas. Los conocimientos de datos basados ​​en inteligencia artificial le brindan la información que necesita para avanzar con confianza.",
+
+	"mainText19: "Arquitectura de solución mejorada",
+	"subMainText19: "Muchos datos, pero ¿no estás seguro de qué hacer con ellos? La inteligencia artificial lo ayuda a organizar, almacenar, integrar y controlar sus datos en toda su empresa."
+
+}
