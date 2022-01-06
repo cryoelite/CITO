@@ -1,7 +1,0 @@
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\bin\Debug\Xeno.exe.config
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\bin\Debug\Xeno.exe
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\bin\Debug\Xeno.pdb
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\obj\Debug\Xeno.csprojAssemblyReference.cache
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\obj\Debug\Xeno.csproj.CoreCompileInputs.cache
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\obj\Debug\Xeno.exe
-C:\Users\millify\Documents\GitHub\CodeITestOn\Xeno\obj\Debug\Xeno.pdb
