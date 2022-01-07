@@ -16,4 +16,6 @@
 A ScrollView is a view group that allows the view hierarchy placed within it to be scrolled. \n
         A scroll view can contain only one other view, or view group, as a child. The child view is commonly a LinearLayout. Inside a LinearLayout, you can add other views.\n \n
     </string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
 </resources>
