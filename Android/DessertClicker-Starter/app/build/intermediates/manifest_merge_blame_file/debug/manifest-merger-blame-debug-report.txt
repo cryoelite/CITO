@@ -1,0 +1,90 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2019, The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~      http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.dessertclicker"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="28"
+23-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="31" />
+24-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml
+25
+26    <application
+26-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:20:5-37:19
+27        android:name="com.example.android.dessertclicker.ClickerApplication"
+27-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:21:9-43
+28        android:allowBackup="true"
+28-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:22:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.7.0] C:\Users\millify\.gradle\caches\transforms-3\fb3270031bd107031c21c5dc13d9e5ef\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:icon="@mipmap/ic_dessert_clicker"
+32-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:23:9-50
+33        android:label="@string/app_name"
+33-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:24:9-41
+34        android:roundIcon="@mipmap/ic_dessert_clicker_round"
+34-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:25:9-61
+35        android:supportsRtl="true"
+35-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:26:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme" >
+37-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:27:9-40
+38        <activity
+38-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:28:9-36:20
+39            android:name="com.example.android.dessertclicker.MainActivity"
+39-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:29:13-75
+40            android:exported="true" >
+40-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:30:13-36
+41            <intent-filter>
+41-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:31:13-35:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:32:17-69
+42-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:32:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:34:17-77
+44-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DessertClicker-Starter\app\src\main\AndroidManifest.xml:34:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+50            android:authorities="com.example.android.dessertclicker.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\86bbdb4c704f0c6ef69f85fd6941d5d8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\60fb03f7868607ff1baa13fa3ab998ab\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\60fb03f7868607ff1baa13fa3ab998ab\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\60fb03f7868607ff1baa13fa3ab998ab\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+58        </provider>
+59    </application>
+60
+61</manifest>
