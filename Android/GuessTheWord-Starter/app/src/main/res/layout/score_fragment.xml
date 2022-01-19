@@ -17,7 +17,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <data>
+        <variable
+            name="scoreViewModel"
+            type="com.example.android.guesstheword.screens.score.ScoreViewModel" />
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/score_layout"
         android:layout_width="match_parent"
@@ -57,7 +61,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/you_scored_text"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="40" />
+            tools:text="40"
+            android:text="@{String.valueOf(scoreViewModel.score)}"
+            />
 
         <Button
             android:id="@+id/play_again_button"
@@ -66,10 +72,12 @@
             android:layout_marginBottom="32dp"
             android:text="@string/play_again"
             android:theme="@style/GoButton"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="@{() -> scoreViewModel.onPlayAgain()}"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
