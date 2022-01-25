@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\millify\\Documents\\GitHub\\CodeITestOn\\Android\\DevBytes-starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_dev_byte.xml",
+        "source": "C:\\Users\\millify\\Documents\\GitHub\\CodeITestOn\\Android\\DevBytes-starter\\app\\src\\main\\res\\layout\\fragment_dev_byte.xml"
+    },
+    {
+        "merged": "C:\\Users\\millify\\Documents\\GitHub\\CodeITestOn\\Android\\DevBytes-starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\devbyte_item.xml",
+        "source": "C:\\Users\\millify\\Documents\\GitHub\\CodeITestOn\\Android\\DevBytes-starter\\app\\src\\main\\res\\layout\\devbyte_item.xml"
+    }
+]
