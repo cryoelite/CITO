@@ -221,6 +221,7 @@ int attr carousel_previousState 0x7f030093
 int attr carousel_touchUpMode 0x7f030094
 int attr carousel_touchUp_dampeningFactor 0x7f030095
 int attr carousel_touchUp_velocityThreshold 0x7f030096
+int attr centerIfNoTextEnabled 0x7f03045d
 int attr chainUseRtl 0x7f030097
 int attr checkMarkCompat 0x7f030098
 int attr checkMarkTint 0x7f030099
@@ -230,6 +231,7 @@ int attr checkedButton 0x7f03009c
 int attr checkedChip 0x7f03009d
 int attr checkedIcon 0x7f03009e
 int attr checkedIconEnabled 0x7f03009f
+int attr checkedIconGravity 0x7f03045e
 int attr checkedIconMargin 0x7f0300a0
 int attr checkedIconSize 0x7f0300a1
 int attr checkedIconTint 0x7f0300a2
@@ -623,6 +625,7 @@ int attr labelBehavior 0x7f030225
 int attr labelStyle 0x7f030226
 int attr labelVisibilityMode 0x7f030227
 int attr lastBaselineToBottomHeight 0x7f030228
+int attr lastItemDecorated 0x7f03045f
 int attr launchSingleTop 0x7f030229
 int attr layout 0x7f03022a
 int attr layoutDescription 0x7f03022b
@@ -721,6 +724,9 @@ int attr listPreferredItemPaddingStart 0x7f030287
 int attr logo 0x7f030288
 int attr logoDescription 0x7f030289
 int attr marginHorizontal 0x7f03028a
+int attr marginLeftSystemWindowInsets 0x7f030460
+int attr marginRightSystemWindowInsets 0x7f030461
+int attr marginTopSystemWindowInsets 0x7f030462
 int attr materialAlertDialogBodyTextStyle 0x7f03028b
 int attr materialAlertDialogButtonSpacerVisibility 0x7f03028c
 int attr materialAlertDialogTheme 0x7f03028d
@@ -3052,6 +3058,22 @@ int integer m3_btn_anim_duration_ms 0x7f09000b
 int integer m3_card_anim_delay_ms 0x7f09000c
 int integer m3_card_anim_duration_ms 0x7f09000d
 int integer m3_chip_anim_duration 0x7f09000e
+int integer m3_sys_motion_duration_100 0x7f09002f
+int integer m3_sys_motion_duration_1000 0x7f090030
+int integer m3_sys_motion_duration_150 0x7f090031
+int integer m3_sys_motion_duration_200 0x7f090032
+int integer m3_sys_motion_duration_250 0x7f090033
+int integer m3_sys_motion_duration_300 0x7f090034
+int integer m3_sys_motion_duration_350 0x7f090035
+int integer m3_sys_motion_duration_400 0x7f090036
+int integer m3_sys_motion_duration_450 0x7f090037
+int integer m3_sys_motion_duration_50 0x7f090038
+int integer m3_sys_motion_duration_500 0x7f090039
+int integer m3_sys_motion_duration_550 0x7f09003a
+int integer m3_sys_motion_duration_600 0x7f09003b
+int integer m3_sys_motion_duration_700 0x7f09003c
+int integer m3_sys_motion_duration_800 0x7f09003d
+int integer m3_sys_motion_duration_900 0x7f09003e
 int integer m3_sys_motion_duration_long1 0x7f09000f
 int integer m3_sys_motion_duration_long2 0x7f090010
 int integer m3_sys_motion_duration_medium1 0x7f090011
@@ -3280,8 +3302,15 @@ int string m3_ref_typeface_plain_regular 0x7f100030
 int string m3_sys_motion_easing_accelerated 0x7f100031
 int string m3_sys_motion_easing_decelerated 0x7f100032
 int string m3_sys_motion_easing_emphasized 0x7f100033
+int string m3_sys_motion_easing_emphasized_accelerate 0x7f100086
+int string m3_sys_motion_easing_emphasized_decelerate 0x7f100087
+int string m3_sys_motion_easing_legacy 0x7f100088
+int string m3_sys_motion_easing_legacy_accelerate 0x7f100089
+int string m3_sys_motion_easing_legacy_decelerate 0x7f10008a
 int string m3_sys_motion_easing_linear 0x7f100034
 int string m3_sys_motion_easing_standard 0x7f100035
+int string m3_sys_motion_easing_standard_accelerate 0x7f10008b
+int string m3_sys_motion_easing_standard_decelerate 0x7f10008c
 int string m3_sys_typescale_body_large_font 0x7f100036
 int string m3_sys_typescale_body_medium_font 0x7f100037
 int string m3_sys_typescale_body_small_font 0x7f100038
@@ -3371,6 +3400,7 @@ int style Animation_AppCompat_Tooltip 0x7f110005
 int style Animation_Design_BottomSheetDialog 0x7f110006
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f110007
 int style AppTheme 0x7f110008
+int style AppTheme_NoActionBar 0x7f110400
 int style Base_AlertDialog_AppCompat 0x7f110009
 int style Base_AlertDialog_AppCompat_Light 0x7f11000a
 int style Base_Animation_AppCompat_Dialog 0x7f11000b
@@ -4688,7 +4718,7 @@ int styleable BottomAppBar_paddingRightSystemWindowInsets 11
 int[] styleable BottomNavigationView { 0x01010140, 0x7f030208 }
 int styleable BottomNavigationView_android_minHeight 0
 int styleable BottomNavigationView_itemHorizontalTranslationEnabled 1
-int[] styleable BottomSheetBehavior_Layout { 0x0101011f, 0x01010120, 0x01010440, 0x7f03004b, 0x7f030059, 0x7f03005a, 0x7f03005b, 0x7f03005c, 0x7f03005d, 0x7f03005f, 0x7f030060, 0x7f030061, 0x7f0301cf, 0x7f0302fe, 0x7f030300, 0x7f030301, 0x7f030304, 0x7f030350, 0x7f030353 }
+int[] styleable BottomSheetBehavior_Layout { 0x0101011f, 0x01010120, 0x01010440, 0x7f03004b, 0x7f030059, 0x7f03005a, 0x7f03005b, 0x7f03005c, 0x7f03005d, 0x7f03005f, 0x7f030060, 0x7f030061, 0x7f0301cf, 0x7f0302fe, 0x7f030300, 0x7f030301, 0x7f030304, 0x7f030350, 0x7f030353, 0x7f030460, 0x7f030461, 0x7f030462 }
 int styleable BottomSheetBehavior_Layout_android_maxWidth 0
 int styleable BottomSheetBehavior_Layout_android_maxHeight 1
 int styleable BottomSheetBehavior_Layout_android_elevation 2
@@ -4708,6 +4738,9 @@ int styleable BottomSheetBehavior_Layout_paddingRightSystemWindowInsets 15
 int styleable BottomSheetBehavior_Layout_paddingTopSystemWindowInsets 16
 int styleable BottomSheetBehavior_Layout_shapeAppearance 17
 int styleable BottomSheetBehavior_Layout_shapeAppearanceOverlay 18
+int styleable BottomSheetBehavior_Layout_marginLeftSystemWindowInsets 19
+int styleable BottomSheetBehavior_Layout_marginRightSystemWindowInsets 20
+int styleable BottomSheetBehavior_Layout_marginTopSystemWindowInsets 21
 int[] styleable ButtonBarLayout { 0x7f03002c }
 int styleable ButtonBarLayout_allowStacking 0
 int[] styleable Capability { 0x7f03032e, 0x7f030355 }
@@ -5456,11 +5489,14 @@ int styleable ImageFilterView_round 10
 int styleable ImageFilterView_roundPercent 11
 int styleable ImageFilterView_saturation 12
 int styleable ImageFilterView_warmth 13
-int[] styleable Insets { 0x7f0302fe, 0x7f030300, 0x7f030301, 0x7f030304 }
+int[] styleable Insets { 0x7f0302fe, 0x7f030300, 0x7f030301, 0x7f030304, 0x7f030460, 0x7f030461, 0x7f030462 }
 int styleable Insets_paddingBottomSystemWindowInsets 0
 int styleable Insets_paddingLeftSystemWindowInsets 1
 int styleable Insets_paddingRightSystemWindowInsets 2
 int styleable Insets_paddingTopSystemWindowInsets 3
+int styleable Insets_marginLeftSystemWindowInsets 4
+int styleable Insets_marginRightSystemWindowInsets 5
+int styleable Insets_marginTopSystemWindowInsets 6
 int[] styleable KeyAttribute { 0x0101031f, 0x01010320, 0x01010321, 0x01010322, 0x01010323, 0x01010324, 0x01010325, 0x01010326, 0x01010327, 0x01010328, 0x010103fa, 0x01010440, 0x7f03012f, 0x7f0301cd, 0x7f0302e0, 0x7f0302e2, 0x7f030431, 0x7f030433, 0x7f030435 }
 int styleable KeyAttribute_android_alpha 0
 int styleable KeyAttribute_android_transformPivotX 1
@@ -5715,7 +5751,7 @@ int styleable MaterialCalendarItem_itemShapeAppearanceOverlay 6
 int styleable MaterialCalendarItem_itemStrokeColor 7
 int styleable MaterialCalendarItem_itemStrokeWidth 8
 int styleable MaterialCalendarItem_itemTextColor 9
-int[] styleable MaterialCardView { 0x010101e5, 0x7f030088, 0x7f03009e, 0x7f0300a0, 0x7f0300a1, 0x7f0300a2, 0x7f03033e, 0x7f030350, 0x7f030353, 0x7f03037d, 0x7f030383, 0x7f030384 }
+int[] styleable MaterialCardView { 0x010101e5, 0x7f030088, 0x7f03009e, 0x7f0300a0, 0x7f0300a1, 0x7f0300a2, 0x7f03033e, 0x7f030350, 0x7f030353, 0x7f03037d, 0x7f030383, 0x7f030384, 0x7f03045e }
 int styleable MaterialCardView_android_checkable 0
 int styleable MaterialCardView_cardForegroundColor 1
 int styleable MaterialCardView_checkedIcon 2
@@ -5728,14 +5764,17 @@ int styleable MaterialCardView_shapeAppearanceOverlay 8
 int styleable MaterialCardView_state_dragged 9
 int styleable MaterialCardView_strokeColor 10
 int styleable MaterialCardView_strokeWidth 11
-int[] styleable MaterialCheckBox { 0x7f030083, 0x7f03043e }
+int styleable MaterialCardView_checkedIconGravity 12
+int[] styleable MaterialCheckBox { 0x7f030083, 0x7f03043e, 0x7f03045d }
 int styleable MaterialCheckBox_buttonTint 0
 int styleable MaterialCheckBox_useMaterialThemeColors 1
-int[] styleable MaterialDivider { 0x7f03014d, 0x7f03014f, 0x7f030150, 0x7f030152 }
+int styleable MaterialCheckBox_centerIfNoTextEnabled 2
+int[] styleable MaterialDivider { 0x7f03014d, 0x7f03014f, 0x7f030150, 0x7f030152, 0x7f03045f }
 int styleable MaterialDivider_dividerColor 0
 int styleable MaterialDivider_dividerInsetEnd 1
 int styleable MaterialDivider_dividerInsetStart 2
 int styleable MaterialDivider_dividerThickness 3
+int styleable MaterialDivider_lastItemDecorated 4
 int[] styleable MaterialRadioButton { 0x7f030083, 0x7f03043e }
 int styleable MaterialRadioButton_buttonTint 0
 int styleable MaterialRadioButton_useMaterialThemeColors 1

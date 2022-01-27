@@ -4,16 +4,6 @@
             "outputFile": "C:\\Users\\millify\\Documents\\GitHub\\CodeITestOn\\Android\\DevBytes-starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\millify\\.gradle\\caches\\transforms-3\\d3ac8f318150a53c9b2259ddc4d80d53\\transformed\\material-1.5.0\\res\\values-v28\\values-v28.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,248,343,441,529,617,705,793,880,967,1054",
-                        "endColumns": "97,94,94,97,87,87,87,87,86,86,86,86",
-                        "endOffsets": "148,243,338,436,524,612,700,788,875,962,1049,1136"
-                    }
-                },
-                {
                     "source": "C:\\Users\\millify\\.gradle\\caches\\transforms-3\\33e2382e2a4b05258454807d965391b6\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
@@ -30,6 +20,16 @@
                         "endLines": "14,15,19,23",
                         "endColumns": "74,86,12,12",
                         "endOffsets": "1211,1298,1528,1770"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\millify\\.gradle\\caches\\transforms-3\\d4a6017ff2c3f8c1b5bbbf1240362553\\transformed\\material-1.6.0-alpha02\\res\\values-v28\\values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,248,343,441,529,617,705,793,880,967,1054",
+                        "endColumns": "97,94,94,97,87,87,87,87,86,86,86,86",
+                        "endOffsets": "148,243,338,436,524,612,700,788,875,962,1049,1136"
                     }
                 }
             ]

@@ -47,56 +47,57 @@
 36-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:29:9-54
 37        android:supportsRtl="true"
 37-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:30:9-35
-38        android:theme="@style/AppTheme" >
-38-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:31:9-40
-39        <activity
-39-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:33:9-40:20
-40            android:name="com.example.android.devbyteviewer.ui.DevByteActivity"
-40-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:33:19-53
-41            android:exported="true" >
-41-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:34:13-36
-42            <intent-filter>
-42-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:35:13-39:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:36:17-69
-43-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:36:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:38:17-77
-45-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:38:27-74
-46            </intent-filter>
-47        </activity>
-48
-49        <service
-49-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:25:9-28:40
-50            android:name="androidx.room.MultiInstanceInvalidationService"
-50-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:26:13-74
-51            android:directBootAware="true"
-51-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:27:13-43
-52            android:exported="false" />
-52-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:28:13-37
-53
-54        <provider
-54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-56            android:authorities="com.example.android.devbyteviewer.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-58            <meta-data
-58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-64        </provider>
-65    </application>
-66
-67</manifest>
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:31:9-40
+40        <activity
+40-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:33:9-40:20
+41            android:name="com.example.android.devbyteviewer.ui.DevByteActivity"
+41-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:33:19-53
+42            android:exported="true" >
+42-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:34:13-36
+43            <intent-filter>
+43-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:35:13-39:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:36:17-69
+44-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:36:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:38:17-77
+46-->C:\Users\millify\Documents\GitHub\CodeITestOn\Android\DevBytes-starter\app\src\main\AndroidManifest.xml:38:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+52            android:authorities="com.example.android.devbyteviewer.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+54            <meta-data
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+56                android:value="androidx.startup" />
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\millify\.gradle\caches\transforms-3\6e6a280a6dae4397ab2d83c1b19a23ec\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+57            <meta-data
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+59                android:value="androidx.startup" />
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\millify\.gradle\caches\transforms-3\158b69580b367293f324ef966c720e99\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+60        </provider>
+61
+62        <service
+62-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:25:9-28:40
+63            android:name="androidx.room.MultiInstanceInvalidationService"
+63-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:26:13-74
+64            android:directBootAware="true"
+64-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:27:13-43
+65            android:exported="false" />
+65-->[androidx.room:room-runtime:2.4.1] C:\Users\millify\.gradle\caches\transforms-3\caff5b252ea7a3940fe686b4508c9653\transformed\room-runtime-2.4.1\AndroidManifest.xml:28:13-37
+66    </application>
+67
+68</manifest>
