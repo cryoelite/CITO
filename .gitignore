@@ -1,195 +1,195 @@
 #Android
 # Windows thumbnail db
-Android/*/Thumbs.db
+Android/**/Thumbs.db
 
 # OSX files
-Android/*/.DS_Store
+Android/**/.DS_Store
 
 # built application files
-Android/*/.apk
-Android/*/.ap_
+Android/**/.apk
+Android/**/.ap_
 
 # files for the dex VM
-Android/*/.dex
+Android/**/.dex
  
 # Java class files
-Android/*/.class
+Android/**/.class
 
 # generated files
-Android/*/bin/
-Android/*/gen/
-Android/*/build/
+Android/**/bin/
+Android/**/gen/
+Android/**/build/
   
 # Local configuration file (sdk path, etc)
 Android/**/local.properties
   
 # Eclipse project files
-Android/*/.classpath
-Android/*/.project
+Android/**/.classpath
+Android/**/.project
  
 # Android Studio
-Android/*/.idea
-Android/*/.gradle
-Android/*/*/out
-Android/*/*/*/build
-Android/*/build
-Android/*/*/*/production
-Android/*/*.iml
-Android/*/*.iws
-Android/*/*.ipr
-Android/*/*~
-Android/*/*.swp
+Android/**/.idea
+Android/**/.gradle
+Android/**/*/out
+Android/**/*/*/build
+Android/**/build
+Android/**/*/*/production
+Android/**/*.iml
+Android/**/*.iws
+Android/**/*.ipr
+Android/**/*~
+Android/**/*.swp
 
 
 
 #Kotlin
-Kotlin/*/.DS_Store
-Kotlin/*/.idea/shelf
-Kotlin/*/*/confluence/target
-Kotlin/*/*/dependencies/repo
-Kotlin/*/*/android.tests.dependencies
-Kotlin/*/*/dependencies/android.tests.dependencies
-Kotlin/*/*/dist
-Kotlin/*/*/local
-Kotlin/*/*/gh-pages
-Kotlin/*/*/ideaSDK
-Kotlin/*/*/clionSDK
-Kotlin/*/*/android-studio/sdk
-Kotlin/*/out/
-Kotlin/*/*/tmp
-Kotlin/*/*/intellij
-Kotlin/*/workspace.xml
-Kotlin/*/*.versionsBackup
-Kotlin/*/*/idea/testData/debugger/tinyApp/classes*
-Kotlin/*/*/jps-plugin/testData/kannotator
-Kotlin/*/*/js/js.translator/testData/out/
-Kotlin/*/*/js/js.translator/testData/out-min/
-Kotlin/*/*/js/js.translator/testData/out-pir/
-Kotlin/*/.gradle/
-Kotlin/*/build/
-Kotlin/*/!**/src/**/build
-Kotlin/*/!**/test/**/build
-Kotlin/*/*.iml
-Kotlin/*/!**/testData/**/*.iml
-Kotlin/*/.idea/remote-targets.xml
-Kotlin/*/.idea/libraries/Gradle*.xml
-Kotlin/*/.idea/libraries/Maven*.xml
-Kotlin/*/.idea/artifacts/PILL_*.xml
-Kotlin/*/.idea/artifacts/KotlinPlugin.xml
-Kotlin/*/.idea/modules
-Kotlin/*/.idea/runConfigurations/JPS_*.xml
-Kotlin/*/.idea/runConfigurations/PILL_*.xml
-Kotlin/*/.idea/runConfigurations/_FP_*.xml
-Kotlin/*/.idea/runConfigurations/_MT_*.xml
-Kotlin/*/.idea/libraries
-Kotlin/*/.idea/modules.xml
-Kotlin/*/.idea/gradle.xml
-Kotlin/*/.idea/compiler.xml
-Kotlin/*/.idea/inspectionProfiles/profiles_settings.xml
-Kotlin/*/.idea/.name
-Kotlin/*/.idea/artifacts/dist_auto_*
-Kotlin/*/.idea/artifacts/dist.xml
-Kotlin/*/.idea/artifacts/ideaPlugin.xml
-Kotlin/*/.idea/artifacts/kotlinc.xml
-Kotlin/*/.idea/artifacts/kotlin_compiler_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_jps_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_daemon_client_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_imports_dumper_compiler_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_main_kts_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_compiler_client_embeddable_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_reflect_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_stdlib_js_ir_*
-Kotlin/*/.idea/artifacts/kotlin_test_js_ir_*
-Kotlin/*/.idea/artifacts/kotlin_stdlib_wasm_*
-Kotlin/*/.idea/artifacts/kotlinx_atomicfu_runtime_*
-Kotlin/*/.idea/jarRepositories.xml
-Kotlin/*/.idea/csv-plugin.xml
-Kotlin/*/.idea/libraries-with-intellij-classes.xml
-Kotlin/*/.idea/misc.xml
-Kotlin/*/node_modules/
-Kotlin/*/.rpt2_cache/
-Kotlin/*/libraries/tools/kotlin-test-js-runner/lib/
-Kotlin/*/local.properties
-Kotlin/*/buildSrcTmp/
-Kotlin/*/distTmp/
-Kotlin/*/outTmp/
-Kotlin/*/*/test.output
-Kotlin/*/*/kotlin-native/dist
-Kotlin/*/kotlin-ide/.DS_Store
-Kotlin/*/.idea/shelf
-Kotlin/*/*/confluence/target
-Kotlin/*/*/dependencies/repo
-Kotlin/*/*/android.tests.dependencies
-Kotlin/*/*/dependencies/android.tests.dependencies
-Kotlin/*/*/dist
-Kotlin/*/*/local
-Kotlin/*/*/gh-pages
-Kotlin/*/*/ideaSDK
-Kotlin/*/*/clionSDK
-Kotlin/*/*/android-studio/sdk
-Kotlin/*/out/
-Kotlin/*/*/tmp
-Kotlin/*/*/intellij
-Kotlin/*/workspace.xml
-Kotlin/*/*.versionsBackup
-Kotlin/*/*/idea/testData/debugger/tinyApp/classes*
-Kotlin/*/*/jps-plugin/testData/kannotator
-Kotlin/*/*/js/js.translator/testData/out/
-Kotlin/*/*/js/js.translator/testData/out-min/
-Kotlin/*/*/js/js.translator/testData/out-pir/
-Kotlin/*/.gradle/
-Kotlin/*/build/
-Kotlin/*/!**/src/**/build
-Kotlin/*/!**/test/**/build
-Kotlin/*/*.iml
-Kotlin/*/!**/testData/**/*.iml
-Kotlin/*/.idea/remote-targets.xml
-Kotlin/*/.idea/libraries/Gradle*.xml
-Kotlin/*/.idea/libraries/Maven*.xml
-Kotlin/*/.idea/artifacts/PILL_*.xml
-Kotlin/*/.idea/artifacts/KotlinPlugin.xml
-Kotlin/*/.idea/modules
-Kotlin/*/.idea/runConfigurations/JPS_*.xml
-Kotlin/*/.idea/runConfigurations/PILL_*.xml
-Kotlin/*/.idea/runConfigurations/_FP_*.xml
-Kotlin/*/.idea/runConfigurations/_MT_*.xml
-Kotlin/*/.idea/libraries
-Kotlin/*/.idea/modules.xml
-Kotlin/*/.idea/gradle.xml
-Kotlin/*/.idea/compiler.xml
-Kotlin/*/.idea/inspectionProfiles/profiles_settings.xml
-Kotlin/*/.idea/.name
-Kotlin/*/.idea/artifacts/dist_auto_*
-Kotlin/*/.idea/artifacts/dist.xml
-Kotlin/*/.idea/artifacts/ideaPlugin.xml
-Kotlin/*/.idea/artifacts/kotlinc.xml
-Kotlin/*/.idea/artifacts/kotlin_compiler_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_jps_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_daemon_client_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_imports_dumper_compiler_plugin_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_main_kts_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_compiler_client_embeddable_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_reflect_jar.xml
-Kotlin/*/.idea/artifacts/kotlin_stdlib_js_ir_*
-Kotlin/*/.idea/artifacts/kotlin_test_js_ir_*
-Kotlin/*/.idea/artifacts/kotlin_stdlib_wasm_*
-Kotlin/*/.idea/artifacts/kotlinx_atomicfu_runtime_*
-Kotlin/*/.idea/jarRepositories.xml
-Kotlin/*/.idea/csv-plugin.xml
-Kotlin/*/.idea/libraries-with-intellij-classes.xml
-Kotlin/*/.idea/misc.xml
-Kotlin/*/node_modules/
-Kotlin/*/.rpt2_cache/
-Kotlin/*/libraries/tools/kotlin-test-js-runner/lib/
-Kotlin/*/local.properties
-Kotlin/*/buildSrcTmp/
-Kotlin/*/distTmp/
-Kotlin/*/outTmp/
-Kotlin/*/*/test.output
-Kotlin/*/*/kotlin-native/dist
-Kotlin/*/kotlin-ide/
+Kotlin/**/.DS_Store
+Kotlin/**/.idea/shelf
+Kotlin/**/*/confluence/target
+Kotlin/**/*/dependencies/repo
+Kotlin/**/*/android.tests.dependencies
+Kotlin/**/*/dependencies/android.tests.dependencies
+Kotlin/**/*/dist
+Kotlin/**/*/local
+Kotlin/**/*/gh-pages
+Kotlin/**/*/ideaSDK
+Kotlin/**/*/clionSDK
+Kotlin/**/*/android-studio/sdk
+Kotlin/**/out/
+Kotlin/**/*/tmp
+Kotlin/**/*/intellij
+Kotlin/**/workspace.xml
+Kotlin/**/*.versionsBackup
+Kotlin/**/*/idea/testData/debugger/tinyApp/classes*
+Kotlin/**/*/jps-plugin/testData/kannotator
+Kotlin/**/*/js/js.translator/testData/out/
+Kotlin/**/*/js/js.translator/testData/out-min/
+Kotlin/**/*/js/js.translator/testData/out-pir/
+Kotlin/**/.gradle/
+Kotlin/**/build/
+Kotlin/**/!**/src/**/build
+Kotlin/**/!**/test/**/build
+Kotlin/**/*.iml
+Kotlin/**/!**/testData/**/*.iml
+Kotlin/**/.idea/remote-targets.xml
+Kotlin/**/.idea/libraries/Gradle*.xml
+Kotlin/**/.idea/libraries/Maven*.xml
+Kotlin/**/.idea/artifacts/PILL_*.xml
+Kotlin/**/.idea/artifacts/KotlinPlugin.xml
+Kotlin/**/.idea/modules
+Kotlin/**/.idea/runConfigurations/JPS_*.xml
+Kotlin/**/.idea/runConfigurations/PILL_*.xml
+Kotlin/**/.idea/runConfigurations/_FP_*.xml
+Kotlin/**/.idea/runConfigurations/_MT_*.xml
+Kotlin/**/.idea/libraries
+Kotlin/**/.idea/modules.xml
+Kotlin/**/.idea/gradle.xml
+Kotlin/**/.idea/compiler.xml
+Kotlin/**/.idea/inspectionProfiles/profiles_settings.xml
+Kotlin/**/.idea/.name
+Kotlin/**/.idea/artifacts/dist_auto_*
+Kotlin/**/.idea/artifacts/dist.xml
+Kotlin/**/.idea/artifacts/ideaPlugin.xml
+Kotlin/**/.idea/artifacts/kotlinc.xml
+Kotlin/**/.idea/artifacts/kotlin_compiler_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_jps_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_daemon_client_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_imports_dumper_compiler_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_main_kts_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_compiler_client_embeddable_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_reflect_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_stdlib_js_ir_*
+Kotlin/**/.idea/artifacts/kotlin_test_js_ir_*
+Kotlin/**/.idea/artifacts/kotlin_stdlib_wasm_*
+Kotlin/**/.idea/artifacts/kotlinx_atomicfu_runtime_*
+Kotlin/**/.idea/jarRepositories.xml
+Kotlin/**/.idea/csv-plugin.xml
+Kotlin/**/.idea/libraries-with-intellij-classes.xml
+Kotlin/**/.idea/misc.xml
+Kotlin/**/node_modules/
+Kotlin/**/.rpt2_cache/
+Kotlin/**/libraries/tools/kotlin-test-js-runner/lib/
+Kotlin/**/local.properties
+Kotlin/**/buildSrcTmp/
+Kotlin/**/distTmp/
+Kotlin/**/outTmp/
+Kotlin/**/*/test.output
+Kotlin/**/*/kotlin-native/dist
+Kotlin/**/kotlin-ide/.DS_Store
+Kotlin/**/.idea/shelf
+Kotlin/**/*/confluence/target
+Kotlin/**/*/dependencies/repo
+Kotlin/**/*/android.tests.dependencies
+Kotlin/**/*/dependencies/android.tests.dependencies
+Kotlin/**/*/dist
+Kotlin/**/*/local
+Kotlin/**/*/gh-pages
+Kotlin/**/*/ideaSDK
+Kotlin/**/*/clionSDK
+Kotlin/**/*/android-studio/sdk
+Kotlin/**/out/
+Kotlin/**/*/tmp
+Kotlin/**/*/intellij
+Kotlin/**/workspace.xml
+Kotlin/**/*.versionsBackup
+Kotlin/**/*/idea/testData/debugger/tinyApp/classes*
+Kotlin/**/*/jps-plugin/testData/kannotator
+Kotlin/**/*/js/js.translator/testData/out/
+Kotlin/**/*/js/js.translator/testData/out-min/
+Kotlin/**/*/js/js.translator/testData/out-pir/
+Kotlin/**/.gradle/
+Kotlin/**/build/
+Kotlin/**/!**/src/**/build
+Kotlin/**/!**/test/**/build
+Kotlin/**/*.iml
+Kotlin/**/!**/testData/**/*.iml
+Kotlin/**/.idea/remote-targets.xml
+Kotlin/**/.idea/libraries/Gradle*.xml
+Kotlin/**/.idea/libraries/Maven*.xml
+Kotlin/**/.idea/artifacts/PILL_*.xml
+Kotlin/**/.idea/artifacts/KotlinPlugin.xml
+Kotlin/**/.idea/modules
+Kotlin/**/.idea/runConfigurations/JPS_*.xml
+Kotlin/**/.idea/runConfigurations/PILL_*.xml
+Kotlin/**/.idea/runConfigurations/_FP_*.xml
+Kotlin/**/.idea/runConfigurations/_MT_*.xml
+Kotlin/**/.idea/libraries
+Kotlin/**/.idea/modules.xml
+Kotlin/**/.idea/gradle.xml
+Kotlin/**/.idea/compiler.xml
+Kotlin/**/.idea/inspectionProfiles/profiles_settings.xml
+Kotlin/**/.idea/.name
+Kotlin/**/.idea/artifacts/dist_auto_*
+Kotlin/**/.idea/artifacts/dist.xml
+Kotlin/**/.idea/artifacts/ideaPlugin.xml
+Kotlin/**/.idea/artifacts/kotlinc.xml
+Kotlin/**/.idea/artifacts/kotlin_compiler_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_jps_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_daemon_client_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_imports_dumper_compiler_plugin_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_main_kts_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_compiler_client_embeddable_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_reflect_jar.xml
+Kotlin/**/.idea/artifacts/kotlin_stdlib_js_ir_*
+Kotlin/**/.idea/artifacts/kotlin_test_js_ir_*
+Kotlin/**/.idea/artifacts/kotlin_stdlib_wasm_*
+Kotlin/**/.idea/artifacts/kotlinx_atomicfu_runtime_*
+Kotlin/**/.idea/jarRepositories.xml
+Kotlin/**/.idea/csv-plugin.xml
+Kotlin/**/.idea/libraries-with-intellij-classes.xml
+Kotlin/**/.idea/misc.xml
+Kotlin/**/node_modules/
+Kotlin/**/.rpt2_cache/
+Kotlin/**/libraries/tools/kotlin-test-js-runner/lib/
+Kotlin/**/local.properties
+Kotlin/**/buildSrcTmp/
+Kotlin/**/distTmp/
+Kotlin/**/outTmp/
+Kotlin/**/*/test.output
+Kotlin/**/*/kotlin-native/dist
+Kotlin/**/kotlin-ide/
 
 
 
@@ -202,714 +202,714 @@ Kotlin/*/kotlin-ide/
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # User-specific files
-Cpp-sharp/*/*.rsuser
-Cpp-sharp/*/*.suo
-Cpp-sharp/*/*.user
-Cpp-sharp/*/*.userosscache
-Cpp-sharp/*/*.sln.docstates
+Cpp-sharp/**/*.rsuser
+Cpp-sharp/**/*.suo
+Cpp-sharp/**/*.user
+Cpp-sharp/**/*.userosscache
+Cpp-sharp/**/*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
-Cpp-sharp/*/*.userprefs
+Cpp-sharp/**/*.userprefs
 
 # Mono auto generated files
-Cpp-sharp/*/mono_crash.*
+Cpp-sharp/**/mono_crash.*
 
 # Build results
-Cpp-sharp/*/[Dd]ebug/
-Cpp-sharp/*/[Dd]ebugPublic/
-Cpp-sharp/*/[Rr]elease/
-Cpp-sharp/*/[Rr]eleases/
-Cpp-sharp/*/x64/
-Cpp-sharp/*/x86/
-Cpp-sharp/*/[Ww][Ii][Nn]32/
-Cpp-sharp/*/[Aa][Rr][Mm]/
-Cpp-sharp/*/[Aa][Rr][Mm]64/
-Cpp-sharp/*/bld/
-Cpp-sharp/*/[Bb]in/
-Cpp-sharp/*/[Oo]bj/
-Cpp-sharp/*/[Ll]og/
-Cpp-sharp/*/[Ll]ogs/
+Cpp-sharp/**/[Dd]ebug/
+Cpp-sharp/**/[Dd]ebugPublic/
+Cpp-sharp/**/[Rr]elease/
+Cpp-sharp/**/[Rr]eleases/
+Cpp-sharp/**/x64/
+Cpp-sharp/**/x86/
+Cpp-sharp/**/[Ww][Ii][Nn]32/
+Cpp-sharp/**/[Aa][Rr][Mm]/
+Cpp-sharp/**/[Aa][Rr][Mm]64/
+Cpp-sharp/**/bld/
+Cpp-sharp/**/[Bb]in/
+Cpp-sharp/**/[Oo]bj/
+Cpp-sharp/**/[Ll]og/
+Cpp-sharp/**/[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
-Cpp-sharp/*/.vs/
+Cpp-sharp/**/.vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
 # Visual Studio 2017 auto generated files
-Cpp-sharp/*/Generated\ Files/
+Cpp-sharp/**/Generated\ Files/
 
 # MSTest test Results
-Cpp-sharp/*/[Tt]est[Rr]esult*/
-Cpp-sharp/*/[Bb]uild[Ll]og.*
+Cpp-sharp/**/[Tt]est[Rr]esult*/
+Cpp-sharp/**/[Bb]uild[Ll]og.*
 
 # NUnit
-Cpp-sharp/*/*.VisualState.xml
-Cpp-sharp/*/TestResult.xml
-Cpp-sharp/*/nunit-*.xml
+Cpp-sharp/**/*.VisualState.xml
+Cpp-sharp/**/TestResult.xml
+Cpp-sharp/**/nunit-*.xml
 
 # Build Results of an ATL Project
-Cpp-sharp/*/[Dd]ebugPS/
-Cpp-sharp/*/[Rr]eleasePS/
-Cpp-sharp/*/dlldata.c
+Cpp-sharp/**/[Dd]ebugPS/
+Cpp-sharp/**/[Rr]eleasePS/
+Cpp-sharp/**/dlldata.c
 
 # Benchmark Results
-Cpp-sharp/*/BenchmarkDotNet.Artifacts/
+Cpp-sharp/**/BenchmarkDotNet.Artifacts/
 
 # .NET Core
-Cpp-sharp/*/project.lock.json
-Cpp-sharp/*/project.fragment.lock.json
-Cpp-sharp/*/artifacts/
+Cpp-sharp/**/project.lock.json
+Cpp-sharp/**/project.fragment.lock.json
+Cpp-sharp/**/artifacts/
 
 # ASP.NET Scaffolding
-Cpp-sharp/*/ScaffoldingReadMe.txt
+Cpp-sharp/**/ScaffoldingReadMe.txt
 
 # StyleCop
-Cpp-sharp/*/StyleCopReport.xml
+Cpp-sharp/**/StyleCopReport.xml
 
 # Files built by Visual Studio
-Cpp-sharp/*/*_i.c
-Cpp-sharp/*/*_p.c
-Cpp-sharp/*/*_h.h
-Cpp-sharp/*/*.ilk
-Cpp-sharp/*/*.meta
-Cpp-sharp/*/*.obj
-Cpp-sharp/*/*.iobj
-Cpp-sharp/*/*.pch
-Cpp-sharp/*/*.pdb
-Cpp-sharp/*/*.ipdb
-Cpp-sharp/*/*.pgc
-Cpp-sharp/*/*.pgd
-Cpp-sharp/*/*.rsp
-Cpp-sharp/*/*.sbr
-Cpp-sharp/*/*.tlb
-Cpp-sharp/*/*.tli
-Cpp-sharp/*/*.tlh
-Cpp-sharp/*/*.tmp
-Cpp-sharp/*/*.tmp_proj
-Cpp-sharp/*/*_wpftmp.csproj
-Cpp-sharp/*/*.log
-Cpp-sharp/*/*.tlog
-Cpp-sharp/*/*.vspscc
-Cpp-sharp/*/*.vssscc
-Cpp-sharp/*/.builds
-Cpp-sharp/*/*.pidb
-Cpp-sharp/*/*.svclog
-Cpp-sharp/*/*.scc
+Cpp-sharp/**/*_i.c
+Cpp-sharp/**/*_p.c
+Cpp-sharp/**/*_h.h
+Cpp-sharp/**/*.ilk
+Cpp-sharp/**/*.meta
+Cpp-sharp/**/*.obj
+Cpp-sharp/**/*.iobj
+Cpp-sharp/**/*.pch
+Cpp-sharp/**/*.pdb
+Cpp-sharp/**/*.ipdb
+Cpp-sharp/**/*.pgc
+Cpp-sharp/**/*.pgd
+Cpp-sharp/**/*.rsp
+Cpp-sharp/**/*.sbr
+Cpp-sharp/**/*.tlb
+Cpp-sharp/**/*.tli
+Cpp-sharp/**/*.tlh
+Cpp-sharp/**/*.tmp
+Cpp-sharp/**/*.tmp_proj
+Cpp-sharp/**/*_wpftmp.csproj
+Cpp-sharp/**/*.log
+Cpp-sharp/**/*.tlog
+Cpp-sharp/**/*.vspscc
+Cpp-sharp/**/*.vssscc
+Cpp-sharp/**/.builds
+Cpp-sharp/**/*.pidb
+Cpp-sharp/**/*.svclog
+Cpp-sharp/**/*.scc
 
 # Chutzpah Test files
-Cpp-sharp/*/_Chutzpah*
+Cpp-sharp/**/_Chutzpah*
 
 # Visual C++ cache files
-Cpp-sharp/*/ipch/
-Cpp-sharp/*/*.aps
-Cpp-sharp/*/*.ncb
-Cpp-sharp/*/*.opendb
-Cpp-sharp/*/*.opensdf
-Cpp-sharp/*/*.sdf
-Cpp-sharp/*/*.cachefile
-Cpp-sharp/*/*.VC.db
-Cpp-sharp/*/*.VC.VC.opendb
+Cpp-sharp/**/ipch/
+Cpp-sharp/**/*.aps
+Cpp-sharp/**/*.ncb
+Cpp-sharp/**/*.opendb
+Cpp-sharp/**/*.opensdf
+Cpp-sharp/**/*.sdf
+Cpp-sharp/**/*.cachefile
+Cpp-sharp/**/*.VC.db
+Cpp-sharp/**/*.VC.VC.opendb
 
 # Visual Studio profiler
-Cpp-sharp/*/*.psess
-Cpp-sharp/*/*.vsp
-Cpp-sharp/*/*.vspx
-Cpp-sharp/*/*.sap
+Cpp-sharp/**/*.psess
+Cpp-sharp/**/*.vsp
+Cpp-sharp/**/*.vspx
+Cpp-sharp/**/*.sap
 
 # Visual Studio Trace Files
-Cpp-sharp/*/*.e2e
+Cpp-sharp/**/*.e2e
 
 # TFS 2012 Local Workspace
-Cpp-sharp/*/$tf/
+Cpp-sharp/**/$tf/
 
 # Guidance Automation Toolkit
-Cpp-sharp/*/*.gpState
+Cpp-sharp/**/*.gpState
 
 # ReSharper is a .NET coding add-in
-Cpp-sharp/*/_ReSharper*/
-Cpp-sharp/*/*.[Rr]e[Ss]harper
-Cpp-sharp/*/*.DotSettings.user
+Cpp-sharp/**/_ReSharper*/
+Cpp-sharp/**/*.[Rr]e[Ss]harper
+Cpp-sharp/**/*.DotSettings.user
 
 # TeamCity is a build add-in
-Cpp-sharp/*/_TeamCity*
+Cpp-sharp/**/_TeamCity*
 
 # DotCover is a Code Coverage Tool
-Cpp-sharp/*/*.dotCover
+Cpp-sharp/**/*.dotCover
 
 # AxoCover is a Code Coverage Tool
-Cpp-sharp/*/.axoCover/*
-Cpp-sharp/*/!.axoCover/settings.json
+Cpp-sharp/**/.axoCover/*
+Cpp-sharp/**/!.axoCover/settings.json
 
 # Coverlet is a free, cross platform Code Coverage Tool
-Cpp-sharp/*/coverage*.json
-Cpp-sharp/*/coverage*.xml
-Cpp-sharp/*/coverage*.info
+Cpp-sharp/**/coverage*.json
+Cpp-sharp/**/coverage*.xml
+Cpp-sharp/**/coverage*.info
 
 # Visual Studio code coverage results
-Cpp-sharp/*/*.coverage
-Cpp-sharp/*/*.coveragexml
+Cpp-sharp/**/*.coverage
+Cpp-sharp/**/*.coveragexml
 
 # NCrunch
-Cpp-sharp/*/_NCrunch_*
-Cpp-sharp/*/.*crunch*.local.xml
-Cpp-sharp/*/nCrunchTemp_*
+Cpp-sharp/**/_NCrunch_*
+Cpp-sharp/**/.*crunch*.local.xml
+Cpp-sharp/**/nCrunchTemp_*
 
 # MightyMoose
-Cpp-sharp/*/*.mm.*
-Cpp-sharp/*/AutoTest.Net/
+Cpp-sharp/**/*.mm.*
+Cpp-sharp/**/AutoTest.Net/
 
 # Web workbench (sass)
-Cpp-sharp/*/.sass-cache/
+Cpp-sharp/**/.sass-cache/
 
 # Installshield output folder
-Cpp-sharp/*/[Ee]xpress/
+Cpp-sharp/**/[Ee]xpress/
 
 # DocProject is a documentation generator add-in
-Cpp-sharp/*/DocProject/buildhelp/
-Cpp-sharp/*/DocProject/Help/*.HxT
-Cpp-sharp/*/DocProject/Help/*.HxC
-Cpp-sharp/*/DocProject/Help/*.hhc
-Cpp-sharp/*/DocProject/Help/*.hhk
-Cpp-sharp/*/DocProject/Help/*.hhp
-Cpp-sharp/*/DocProject/Help/Html2
-Cpp-sharp/*/DocProject/Help/html
+Cpp-sharp/**/DocProject/buildhelp/
+Cpp-sharp/**/DocProject/Help/*.HxT
+Cpp-sharp/**/DocProject/Help/*.HxC
+Cpp-sharp/**/DocProject/Help/*.hhc
+Cpp-sharp/**/DocProject/Help/*.hhk
+Cpp-sharp/**/DocProject/Help/*.hhp
+Cpp-sharp/**/DocProject/Help/Html2
+Cpp-sharp/**/DocProject/Help/html
 
 # Click-Once directory
-Cpp-sharp/*/publish/
+Cpp-sharp/**/publish/
 
 # Publish Web Output
-Cpp-sharp/*/*.[Pp]ublish.xml
-Cpp-sharp/*/*.azurePubxml
+Cpp-sharp/**/*.[Pp]ublish.xml
+Cpp-sharp/**/*.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
-Cpp-sharp/*/*.pubxml
-Cpp-sharp/*/*.publishproj
+Cpp-sharp/**/*.pubxml
+Cpp-sharp/**/*.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
 # in these scripts will be unencrypted
-Cpp-sharp/*/PublishScripts/
+Cpp-sharp/**/PublishScripts/
 
 # NuGet Packages
-Cpp-sharp/*/*.nupkg
+Cpp-sharp/**/*.nupkg
 # NuGet Symbol Packages
-Cpp-sharp/*/*.snupkg
+Cpp-sharp/**/*.snupkg
 # The packages folder can be ignored because of Package Restore
-Cpp-sharp/*/**/[Pp]ackages/*
+Cpp-sharp/**/**/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
-Cpp-sharp/*/!**/[Pp]ackages/build/
+Cpp-sharp/**/!**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
-#!**/[Pp]ackages/repositories.config
+#add !**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
-Cpp-sharp/*/*.nuget.props
-Cpp-sharp/*/*.nuget.targets
+Cpp-sharp/**/*.nuget.props
+Cpp-sharp/**/*.nuget.targets
 
 # Microsoft Azure Build Output
-Cpp-sharp/*/csx/
-Cpp-sharp/*/*.build.csdef
+Cpp-sharp/**/csx/
+Cpp-sharp/**/*.build.csdef
 
 # Microsoft Azure Emulator
-Cpp-sharp/*/ecf/
-Cpp-sharp/*/rcf/
+Cpp-sharp/**/ecf/
+Cpp-sharp/**/rcf/
 
 # Windows Store app package directories and files
-Cpp-sharp/*/AppPackages/
-Cpp-sharp/*/BundleArtifacts/
-Cpp-sharp/*/Package.StoreAssociation.xml
-Cpp-sharp/*/_pkginfo.txt
-Cpp-sharp/*/*.appx
-Cpp-sharp/*/*.appxbundle
-Cpp-sharp/*/*.appxupload
+Cpp-sharp/**/AppPackages/
+Cpp-sharp/**/BundleArtifacts/
+Cpp-sharp/**/Package.StoreAssociation.xml
+Cpp-sharp/**/_pkginfo.txt
+Cpp-sharp/**/*.appx
+Cpp-sharp/**/*.appxbundle
+Cpp-sharp/**/*.appxupload
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
-Cpp-sharp/*/*.[Cc]ache
+Cpp-sharp/**/*.[Cc]ache
 # but keep track of directories ending in .cache
-Cpp-sharp/*/!?*.[Cc]ache/
+Cpp-sharp/**/!?*.[Cc]ache/
 
 # Others
-Cpp-sharp/*/ClientBin/
-Cpp-sharp/*/~$*
-Cpp-sharp/*/*~
-Cpp-sharp/*/*.dbmdl
-Cpp-sharp/*/*.dbproj.schemaview
-Cpp-sharp/*/*.jfm
-Cpp-sharp/*/*.pfx
-Cpp-sharp/*/*.publishsettings
-Cpp-sharp/*/orleans.codegen.cs
+Cpp-sharp/**/ClientBin/
+Cpp-sharp/**/~$*
+Cpp-sharp/**/*~
+Cpp-sharp/**/*.dbmdl
+Cpp-sharp/**/*.dbproj.schemaview
+Cpp-sharp/**/*.jfm
+Cpp-sharp/**/*.pfx
+Cpp-sharp/**/*.publishsettings
+Cpp-sharp/**/orleans.codegen.cs
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
-#*.snk
+#add *.snk
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
 # (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
 #bower_components/
 
 # RIA/Silverlight projects
-Cpp-sharp/*/Generated_Code/
+Cpp-sharp/**/Generated_Code/
 
 # Backup & report files from converting an old project file
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
-Cpp-sharp/*/_UpgradeReport_Files/
-Cpp-sharp/*/Backup*/
-Cpp-sharp/*/UpgradeLog*.XML
-Cpp-sharp/*/UpgradeLog*.htm
-Cpp-sharp/*/ServiceFabricBackup/
-Cpp-sharp/*/*.rptproj.bak
+Cpp-sharp/**/_UpgradeReport_Files/
+Cpp-sharp/**/Backup*/
+Cpp-sharp/**/UpgradeLog*.XML
+Cpp-sharp/**/UpgradeLog*.htm
+Cpp-sharp/**/ServiceFabricBackup/
+Cpp-sharp/**/*.rptproj.bak
 
 # SQL Server files
-Cpp-sharp/*/*.mdf
-Cpp-sharp/*/*.ldf
-Cpp-sharp/*/*.ndf
+Cpp-sharp/**/*.mdf
+Cpp-sharp/**/*.ldf
+Cpp-sharp/**/*.ndf
 
 # Business Intelligence projects
-Cpp-sharp/*/*.rdl.data
-Cpp-sharp/*/*.bim.layout
-Cpp-sharp/*/*.bim_*.settings
-Cpp-sharp/*/*.rptproj.rsuser
-Cpp-sharp/*/*- [Bb]ackup.rdl
-Cpp-sharp/*/*- [Bb]ackup ([0-9]).rdl
-Cpp-sharp/*/*- [Bb]ackup ([0-9][0-9]).rdl
+Cpp-sharp/**/*.rdl.data
+Cpp-sharp/**/*.bim.layout
+Cpp-sharp/**/*.bim_*.settings
+Cpp-sharp/**/*.rptproj.rsuser
+Cpp-sharp/**/*- [Bb]ackup.rdl
+Cpp-sharp/**/*- [Bb]ackup ([0-9]).rdl
+Cpp-sharp/**/*- [Bb]ackup ([0-9][0-9]).rdl
 
 # Microsoft Fakes
-Cpp-sharp/*/FakesAssemblies/
+Cpp-sharp/**/FakesAssemblies/
 
 # GhostDoc plugin setting file
-Cpp-sharp/*/*.GhostDoc.xml
+Cpp-sharp/**/*.GhostDoc.xml
 
 # Node.js Tools for Visual Studio
-Cpp-sharp/*/.ntvs_analysis.dat
-Cpp-sharp/*/node_modules/
+Cpp-sharp/**/.ntvs_analysis.dat
+Cpp-sharp/**/node_modules/
 
 # Visual Studio 6 build log
-Cpp-sharp/*/*.plg
+Cpp-sharp/**/*.plg
 
 # Visual Studio 6 workspace options file
-Cpp-sharp/*/*.opt
+Cpp-sharp/**/*.opt
 
 # Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
-Cpp-sharp/*/*.vbw
+Cpp-sharp/**/*.vbw
 
 # Visual Studio 6 auto-generated project file (contains which files were open etc.)
-Cpp-sharp/*/*.vbp
+Cpp-sharp/**/*.vbp
 
 # Visual Studio 6 workspace and project file (working project files containing files to include in project)
-Cpp-sharp/*/*.dsw
-Cpp-sharp/*/*.dsp
+Cpp-sharp/**/*.dsw
+Cpp-sharp/**/*.dsp
 
 # Visual Studio 6 technical files 
-Cpp-sharp/*/*.ncb
-Cpp-sharp/*/*.aps
+Cpp-sharp/**/*.ncb
+Cpp-sharp/**/*.aps
 
 # Visual Studio LightSwitch build output
-Cpp-sharp/*/**/*.HTMLClient/GeneratedArtifacts
-Cpp-sharp/*/**/*.DesktopClient/GeneratedArtifacts
-Cpp-sharp/*/**/*.DesktopClient/ModelManifest.xml
-Cpp-sharp/*/**/*.Server/GeneratedArtifacts
-Cpp-sharp/*/**/*.Server/ModelManifest.xml
-Cpp-sharp/*/_Pvt_Extensions
+Cpp-sharp/**/**/*.HTMLClient/GeneratedArtifacts
+Cpp-sharp/**/**/*.DesktopClient/GeneratedArtifacts
+Cpp-sharp/**/**/*.DesktopClient/ModelManifest.xml
+Cpp-sharp/**/**/*.Server/GeneratedArtifacts
+Cpp-sharp/**/**/*.Server/ModelManifest.xml
+Cpp-sharp/**/_Pvt_Extensions
 
 # Paket dependency manager
-Cpp-sharp/*/.paket/paket.exe
-Cpp-sharp/*/paket-files/
+Cpp-sharp/**/.paket/paket.exe
+Cpp-sharp/**/paket-files/
 
 # FAKE - F# Make
-Cpp-sharp/*/.fake/
+Cpp-sharp/**/.fake/
 
 # CodeRush personal settings
-Cpp-sharp/*/.cr/personal
+Cpp-sharp/**/.cr/personal
 
 # Python Tools for Visual Studio (PTVS)
-Cpp-sharp/*/__pycache__/
-Cpp-sharp/*/*.pyc
+Cpp-sharp/**/__pycache__/
+Cpp-sharp/**/*.pyc
 
 # Cake - Uncomment if you are using it
 # tools/**
-# !tools/packages.config
+# add ! here tools/packages.config
 
 # Tabs Studio
-Cpp-sharp/*/*.tss
+Cpp-sharp/**/*.tss
 
 # Telerik's JustMock configuration file
-Cpp-sharp/*/*.jmconfig
+Cpp-sharp/**/*.jmconfig
 
 # BizTalk build output
-Cpp-sharp/*/*.btp.cs
-Cpp-sharp/*/*.btm.cs
-Cpp-sharp/*/*.odx.cs
-Cpp-sharp/*/*.xsd.cs
+Cpp-sharp/**/*.btp.cs
+Cpp-sharp/**/*.btm.cs
+Cpp-sharp/**/*.odx.cs
+Cpp-sharp/**/*.xsd.cs
 
 # OpenCover UI analysis results
-Cpp-sharp/*/OpenCover/
+Cpp-sharp/**/OpenCover/
 
 # Azure Stream Analytics local run output
-Cpp-sharp/*/ASALocalRun/
+Cpp-sharp/**/ASALocalRun/
 
 # MSBuild Binary and Structured Log
-Cpp-sharp/*/*.binlog
+Cpp-sharp/**/*.binlog
 
 # NVidia Nsight GPU debugger configuration file
-Cpp-sharp/*/*.nvuser
+Cpp-sharp/**/*.nvuser
 
 # MFractors (Xamarin productivity tool) working folder
-Cpp-sharp/*/.mfractor/
+Cpp-sharp/**/.mfractor/
 
 # Local History for Visual Studio
-Cpp-sharp/*/.localhistory/
+Cpp-sharp/**/.localhistory/
 
 # Visual Studio History (VSHistory) files
-Cpp-sharp/*/.vshistory/
+Cpp-sharp/**/.vshistory/
 
 # BeatPulse healthcheck temp database
-Cpp-sharp/*/healthchecksdb
+Cpp-sharp/**/healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
-Cpp-sharp/*/MigrationBackup/
+Cpp-sharp/**/MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
-Cpp-sharp/*/.ionide/
+Cpp-sharp/**/.ionide/
 
 # Fody - auto-generated XML schema
-Cpp-sharp/*/FodyWeavers.xsd
+Cpp-sharp/**/FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-Cpp-sharp/*/.vscode/*
-Cpp-sharp/*/!.vscode/settings.json
-Cpp-sharp/*/!.vscode/tasks.json
-Cpp-sharp/*/!.vscode/launch.json
-Cpp-sharp/*/!.vscode/extensions.json
-Cpp-sharp/*/*.code-workspace
+Cpp-sharp/**/.vscode/*
+Cpp-sharp/**/!.vscode/settings.json
+Cpp-sharp/**/!.vscode/tasks.json
+Cpp-sharp/**/!.vscode/launch.json
+Cpp-sharp/**/!.vscode/extensions.json
+Cpp-sharp/**/*.code-workspace
 
 # Local History for Visual Studio Code
-Cpp-sharp/*/.history/
+Cpp-sharp/**/.history/
 
 # Windows Installer files from build outputs
-Cpp-sharp/*/*.cab
-Cpp-sharp/*/*.msi
-Cpp-sharp/*/*.msix
-Cpp-sharp/*/*.msm
-Cpp-sharp/*/*.msp
+Cpp-sharp/**/*.cab
+Cpp-sharp/**/*.msi
+Cpp-sharp/**/*.msix
+Cpp-sharp/**/*.msm
+Cpp-sharp/**/*.msp
 
 # JetBrains Rider
-Cpp-sharp/*/*.sln.iml
+Cpp-sharp/**/*.sln.iml
 
 
 
 
 # Dart-Flutter
 # Miscellaneous
-Dart-Flutter/*/*.class
-Dart-Flutter/*/*.lock
-Dart-Flutter/*/*.log
-Dart-Flutter/*/*.pyc
-Dart-Flutter/*/*.swp
-Dart-Flutter/*/.DS_Store
-Dart-Flutter/*/.atom/
-Dart-Flutter/*/.buildlog/
-Dart-Flutter/*/.history
-Dart-Flutter/*/.svn/
+Dart-Flutter/**/*.class
+Dart-Flutter/**/*.lock
+Dart-Flutter/**/*.log
+Dart-Flutter/**/*.pyc
+Dart-Flutter/**/*.swp
+Dart-Flutter/**/.DS_Store
+Dart-Flutter/**/.atom/
+Dart-Flutter/**/.buildlog/
+Dart-Flutter/**/.history
+Dart-Flutter/**/.svn/
 
 # IntelliJ related
-Dart-Flutter/*/*.iml
-Dart-Flutter/*/*.ipr
-Dart-Flutter/*/*.iws
-Dart-Flutter/*/.idea/
+Dart-Flutter/**/*.iml
+Dart-Flutter/**/*.ipr
+Dart-Flutter/**/*.iws
+Dart-Flutter/**/.idea/
 
 # Visual Studio Code related
-Dart-Flutter/*/.classpath
-Dart-Flutter/*/.project
-Dart-Flutter/*/.settings/
-Dart-Flutter/*/.vscode/
+Dart-Flutter/**/.classpath
+Dart-Flutter/**/.project
+Dart-Flutter/**/.settings/
+Dart-Flutter/**/.vscode/
 
 # Flutter repo-specific
-Dart-Flutter/*//bin/cache/
-Dart-Flutter/*//bin/internal/bootstrap.bat
-Dart-Flutter/*//bin/internal/bootstrap.sh
-Dart-Flutter/*//bin/mingit/
-Dart-Flutter/*//dev/benchmarks/mega_gallery/
-Dart-Flutter/*//dev/bots/.recipe_deps
-Dart-Flutter/*//dev/bots/android_tools/
-Dart-Flutter/*//dev/devicelab/ABresults*.json
-Dart-Flutter/*//dev/docs/doc/
-Dart-Flutter/*//dev/docs/flutter.docs.zip
-Dart-Flutter/*//dev/docs/lib/
-Dart-Flutter/*//dev/docs/pubspec.yaml
-Dart-Flutter/*//dev/integration_tests/**/xcuserdata
-Dart-Flutter/*//dev/integration_tests/**/Pods
-Dart-Flutter/*//packages/flutter/coverage/
-Dart-Flutter/*/version
-Dart-Flutter/*/analysis_benchmark.json
+Dart-Flutter/**//bin/cache/
+Dart-Flutter/**//bin/internal/bootstrap.bat
+Dart-Flutter/**//bin/internal/bootstrap.sh
+Dart-Flutter/**//bin/mingit/
+Dart-Flutter/**//dev/benchmarks/mega_gallery/
+Dart-Flutter/**//dev/bots/.recipe_deps
+Dart-Flutter/**//dev/bots/android_tools/
+Dart-Flutter/**//dev/devicelab/ABresults*.json
+Dart-Flutter/**//dev/docs/doc/
+Dart-Flutter/**//dev/docs/flutter.docs.zip
+Dart-Flutter/**//dev/docs/lib/
+Dart-Flutter/**//dev/docs/pubspec.yaml
+Dart-Flutter/**//dev/integration_tests/**/xcuserdata
+Dart-Flutter/**//dev/integration_tests/**/Pods
+Dart-Flutter/**//packages/flutter/coverage/
+Dart-Flutter/**/version
+Dart-Flutter/**/analysis_benchmark.json
 
 # packages file containing multi-root paths
-Dart-Flutter/*/.packages.generated
+Dart-Flutter/**/.packages.generated
 
 # Flutter/Dart/Pub related
-Dart-Flutter/*/**/doc/api/
-Dart-Flutter/*/.dart_tool/
-Dart-Flutter/*/.flutter-plugins
-Dart-Flutter/*/.flutter-plugins-dependencies
-Dart-Flutter/*/**/generated_plugin_registrant.dart
-Dart-Flutter/*/.packages
-Dart-Flutter/*/.pub-cache/
-Dart-Flutter/*/.pub/
-Dart-Flutter/*/build/
-Dart-Flutter/*/flutter_*.png
-Dart-Flutter/*/linked_*.ds
-Dart-Flutter/*/unlinked.ds
-Dart-Flutter/*/unlinked_spec.ds
+Dart-Flutter/**/**/doc/api/
+Dart-Flutter/**/.dart_tool/
+Dart-Flutter/**/.flutter-plugins
+Dart-Flutter/**/.flutter-plugins-dependencies
+Dart-Flutter/**/**/generated_plugin_registrant.dart
+Dart-Flutter/**/.packages
+Dart-Flutter/**/.pub-cache/
+Dart-Flutter/**/.pub/
+Dart-Flutter/**/build/
+Dart-Flutter/**/flutter_*.png
+Dart-Flutter/**/linked_*.ds
+Dart-Flutter/**/unlinked.ds
+Dart-Flutter/**/unlinked_spec.ds
 
 # Android related
-Dart-Flutter/*/**/android/**/gradle-wrapper.jar
-Dart-Flutter/*/.gradle/
-Dart-Flutter/*/**/android/captures/
-Dart-Flutter/*/**/android/gradlew
-Dart-Flutter/*/**/android/gradlew.bat
-Dart-Flutter/*/**/android/local.properties
-Dart-Flutter/*/**/android/**/GeneratedPluginRegistrant.java
-Dart-Flutter/*/**/android/key.properties
-Dart-Flutter/*/*.jks
+Dart-Flutter/**/**/android/**/gradle-wrapper.jar
+Dart-Flutter/**/.gradle/
+Dart-Flutter/**/**/android/captures/
+Dart-Flutter/**/**/android/gradlew
+Dart-Flutter/**/**/android/gradlew.bat
+Dart-Flutter/**/**/android/local.properties
+Dart-Flutter/**/**/android/**/GeneratedPluginRegistrant.java
+Dart-Flutter/**/**/android/key.properties
+Dart-Flutter/**/*.jks
 
 # iOS/XCode related
-Dart-Flutter/*/**/ios/**/*.mode1v3
-Dart-Flutter/*/**/ios/**/*.mode2v3
-Dart-Flutter/*/**/ios/**/*.moved-aside
-Dart-Flutter/*/**/ios/**/*.pbxuser
-Dart-Flutter/*/**/ios/**/*.perspectivev3
-Dart-Flutter/*/**/ios/**/*sync/
-Dart-Flutter/*/**/ios/**/.sconsign.dblite
-Dart-Flutter/*/**/ios/**/.tags*
-Dart-Flutter/*/**/ios/**/.vagrant/
-Dart-Flutter/*/**/ios/**/DerivedData/
-Dart-Flutter/*/**/ios/**/Icon?
-Dart-Flutter/*/**/ios/**/Pods/
-Dart-Flutter/*/**/ios/**/.symlinks/
-Dart-Flutter/*/**/ios/**/profile
-Dart-Flutter/*/**/ios/**/xcuserdata
-Dart-Flutter/*/**/ios/.generated/
-Dart-Flutter/*/**/ios/Flutter/.last_build_id
-Dart-Flutter/*/**/ios/Flutter/App.framework
-Dart-Flutter/*/**/ios/Flutter/Flutter.framework
-Dart-Flutter/*/**/ios/Flutter/Flutter.podspec
-Dart-Flutter/*/**/ios/Flutter/Generated.xcconfig
-Dart-Flutter/*/**/ios/Flutter/ephemeral
-Dart-Flutter/*/**/ios/Flutter/app.flx
-Dart-Flutter/*/**/ios/Flutter/app.zip
-Dart-Flutter/*/**/ios/Flutter/flutter_assets/
-Dart-Flutter/*/**/ios/Flutter/flutter_export_environment.sh
-Dart-Flutter/*/**/ios/ServiceDefinitions.json
-Dart-Flutter/*/**/ios/Runner/GeneratedPluginRegistrant.*
+Dart-Flutter/**/**/ios/**/*.mode1v3
+Dart-Flutter/**/**/ios/**/*.mode2v3
+Dart-Flutter/**/**/ios/**/*.moved-aside
+Dart-Flutter/**/**/ios/**/*.pbxuser
+Dart-Flutter/**/**/ios/**/*.perspectivev3
+Dart-Flutter/**/**/ios/**/*sync/
+Dart-Flutter/**/**/ios/**/.sconsign.dblite
+Dart-Flutter/**/**/ios/**/.tags*
+Dart-Flutter/**/**/ios/**/.vagrant/
+Dart-Flutter/**/**/ios/**/DerivedData/
+Dart-Flutter/**/**/ios/**/Icon?
+Dart-Flutter/**/**/ios/**/Pods/
+Dart-Flutter/**/**/ios/**/.symlinks/
+Dart-Flutter/**/**/ios/**/profile
+Dart-Flutter/**/**/ios/**/xcuserdata
+Dart-Flutter/**/**/ios/.generated/
+Dart-Flutter/**/**/ios/Flutter/.last_build_id
+Dart-Flutter/**/**/ios/Flutter/App.framework
+Dart-Flutter/**/**/ios/Flutter/Flutter.framework
+Dart-Flutter/**/**/ios/Flutter/Flutter.podspec
+Dart-Flutter/**/**/ios/Flutter/Generated.xcconfig
+Dart-Flutter/**/**/ios/Flutter/ephemeral
+Dart-Flutter/**/**/ios/Flutter/app.flx
+Dart-Flutter/**/**/ios/Flutter/app.zip
+Dart-Flutter/**/**/ios/Flutter/flutter_assets/
+Dart-Flutter/**/**/ios/Flutter/flutter_export_environment.sh
+Dart-Flutter/**/**/ios/ServiceDefinitions.json
+Dart-Flutter/**/**/ios/Runner/GeneratedPluginRegistrant.*
 
 # macOS
-Dart-Flutter/*/**/macos/Flutter/GeneratedPluginRegistrant.swift
+Dart-Flutter/**/**/macos/Flutter/GeneratedPluginRegistrant.swift
 
 # Coverage
-Dart-Flutter/*/coverage/
+Dart-Flutter/**/coverage/
 
 # Symbols
-Dart-Flutter/*/app.*.symbols
+Dart-Flutter/**/app.*.symbols
 
 # Exceptions to above rules.
-Dart-Flutter/*/!**/ios/**/default.mode1v3
-Dart-Flutter/*/!**/ios/**/default.mode2v3
-Dart-Flutter/*/!**/ios/**/default.pbxuser
-Dart-Flutter/*/!**/ios/**/default.perspectivev3
-Dart-Flutter/*/!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-Dart-Flutter/*/!/dev/ci/**/Gemfile.lock
+Dart-Flutter/**/!**/ios/**/default.mode1v3
+Dart-Flutter/**/!**/ios/**/default.mode2v3
+Dart-Flutter/**/!**/ios/**/default.pbxuser
+Dart-Flutter/**/!**/ios/**/default.perspectivev3
+Dart-Flutter/**/!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+Dart-Flutter/**/!/dev/ci/**/Gemfile.lock
 
 
 
 # JS or rather NodeJS
 # Logs
-JS/*/logs
-JS/*/*.log
-JS/*/npm-debug.log*
-JS/*/yarn-debug.log*
-JS/*/yarn-error.log*
-JS/*/lerna-debug.log*
-JS/*/.pnpm-debug.log*
+JS/**/logs
+JS/**/*.log
+JS/**/npm-debug.log*
+JS/**/yarn-debug.log*
+JS/**/yarn-error.log*
+JS/**/lerna-debug.log*
+JS/**/.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
-JS/*/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+JS/**/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
-JS/*/pids
-JS/*/*.pid
-JS/*/*.seed
-JS/*/*.pid.lock
+JS/**/pids
+JS/**/*.pid
+JS/**/*.seed
+JS/**/*.pid.lock
 
 # Directory for instrumented libs generated by jscoverage/JSCover
-JS/*/lib-cov
+JS/**/lib-cov
 
 # Coverage directory used by tools like istanbul
-JS/*/coverage
-JS/*/*.lcov
+JS/**/coverage
+JS/**/*.lcov
 
 # nyc test coverage
-JS/*/.nyc_output
+JS/**/.nyc_output
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-JS/*/.grunt
+JS/**/.grunt
 
 # Bower dependency directory (https://bower.io/)
-JS/*/bower_components
+JS/**/bower_components
 
 # node-waf configuration
-JS/*/.lock-wscript
+JS/**/.lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-JS/*/build/Release
+JS/**/build/Release
 
 # Dependency directories
-JS/*/node_modules/
-JS/*/jspm_packages/
+JS/**/node_modules/
+JS/**/jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
-JS/*/web_modules/
+JS/**/web_modules/
 
 # TypeScript cache
-JS/*/*.tsbuildinfo
+JS/**/*.tsbuildinfo
 
 # Optional npm cache directory
-JS/*/.npm
+JS/**/.npm
 
 # Optional eslint cache
-JS/*/.eslintcache
+JS/**/.eslintcache
 
 # Optional stylelint cache
-JS/*/.stylelintcache
+JS/**/.stylelintcache
 
 # Microbundle cache
-JS/*/.rpt2_cache/
-JS/*/.rts2_cache_cjs/
-JS/*/.rts2_cache_es/
-JS/*/.rts2_cache_umd/
+JS/**/.rpt2_cache/
+JS/**/.rts2_cache_cjs/
+JS/**/.rts2_cache_es/
+JS/**/.rts2_cache_umd/
 
 # Optional REPL history
-JS/*/.node_repl_history
+JS/**/.node_repl_history
 
 # Output of 'npm pack'
-JS/*/*.tgz
+JS/**/*.tgz
 
 # Yarn Integrity file
-JS/*/.yarn-integrity
+JS/**/.yarn-integrity
 
 # dotenv environment variable files
-JS/*/.env
-JS/*/.env.development.local
-JS/*/.env.test.local
-JS/*/.env.production.local
-JS/*/.env.local
+JS/**/.env
+JS/**/.env.development.local
+JS/**/.env.test.local
+JS/**/.env.production.local
+JS/**/.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
-JS/*/.cache
-JS/*/.parcel-cache
+JS/**/.cache
+JS/**/.parcel-cache
 
 # Next.js build output
-JS/*/.next
-JS/*/out
+JS/**/.next
+JS/**/out
 # Nuxt.js build / generate output
-JS/*/.nuxt
-JS/*/dist
+JS/**/.nuxt
+JS/**/dist
 # Gatsby files
-JS/*/.cache/
+JS/**/.cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 # vuepress build output
-JS/*/.vuepress/dist
+JS/**/.vuepress/dist
 # vuepress v2.x temp and cache directory
-JS/*/.temp
-JS/*/.cache
+JS/**/.temp
+JS/**/.cache
 # Serverless directories
-JS/*/.serverless/
+JS/**/.serverless/
 # FuseBox cache
-JS/*/.fusebox/
+JS/**/.fusebox/
 # DynamoDB Local files
-JS/*/.dynamodb/
+JS/**/.dynamodb/
 # TernJS port file
-JS/*/.tern-port
+JS/**/.tern-port
 # Stores VSCode versions used for testing VSCode extensions
-JS/*/.vscode-test
+JS/**/.vscode-test
 # yarn v2
-JS/*/.yarn/cache
-JS/*/.yarn/unplugged
-JS/*/.yarn/build-state.yml
-JS/*/.yarn/install-state.gz
-JS/*/.pnp.*
+JS/**/.yarn/cache
+JS/**/.yarn/unplugged
+JS/**/.yarn/build-state.yml
+JS/**/.yarn/install-state.gz
+JS/**/.pnp.*
 
 # Python
 # Byte-compiled / optimized / DLL files
-Python/*/__pycache__/
-Python/*/*.py[cod]
-Python/*/*$py.class
+Python/**/__pycache__/
+Python/**/*.py[cod]
+Python/**/*$py.class
 # C extensions
-Python/*/*.so
+Python/**/*.so
 # Distribution / packaging
-Python/*/.Python
-Python/*/build/
-Python/*/develop-eggs/
-Python/*/dist/
-Python/*/downloads/
-Python/*/eggs/
-Python/*/.eggs/
-Python/*/lib/
-Python/*/lib64/
-Python/*/parts/
-Python/*/sdist/
-Python/*/var/
-Python/*/wheels/
-Python/*/share/python-wheels/
-Python/*/*.egg-info/
-Python/*/.installed.cfg
-Python/*/*.egg
-Python/*/MANIFEST
+Python/**/.Python
+Python/**/build/
+Python/**/develop-eggs/
+Python/**/dist/
+Python/**/downloads/
+Python/**/eggs/
+Python/**/.eggs/
+Python/**/lib/
+Python/**/lib64/
+Python/**/parts/
+Python/**/sdist/
+Python/**/var/
+Python/**/wheels/
+Python/**/share/python-wheels/
+Python/**/*.egg-info/
+Python/**/.installed.cfg
+Python/**/*.egg
+Python/**/MANIFEST
 # PyInstaller
 # Usually these files are written by a python script from a template
 # before PyInstaller builds the exe, so as to inject date/other infos into it.
-Python/*/*.manifest
-Python/*/*.spec
+Python/**/*.manifest
+Python/**/*.spec
 # Installer logs
-Python/*/pip-log.txt
-Python/*/pip-delete-this-directory.txt
+Python/**/pip-log.txt
+Python/**/pip-delete-this-directory.txt
 # Unit test / coverage reports
-Python/*/htmlcov/
-Python/*/.tox/
-Python/*/.nox/
-Python/*/.coverage
-Python/*/.coverage.*
-Python/*/.cache
-Python/*/nosetests.xml
-Python/*/coverage.xml
-Python/*/*.cover
-Python/*/*.py,cover
-Python/*/.hypothesis/
-Python/*/.pytest_cache/
-Python/*/cover/
+Python/**/htmlcov/
+Python/**/.tox/
+Python/**/.nox/
+Python/**/.coverage
+Python/**/.coverage.*
+Python/**/.cache
+Python/**/nosetests.xml
+Python/**/coverage.xml
+Python/**/*.cover
+Python/**/*.py,cover
+Python/**/.hypothesis/
+Python/**/.pytest_cache/
+Python/**/cover/
 # Translations
-Python/*/*.mo
-Python/*/*.pot
+Python/**/*.mo
+Python/**/*.pot
 # Django stuff:
-Python/*/*.log
-Python/*/local_settings.py
-Python/*/db.sqlite3
-Python/*/db.sqlite3-journal
+Python/**/*.log
+Python/**/local_settings.py
+Python/**/db.sqlite3
+Python/**/db.sqlite3-journal
 # Flask stuff:
-Python/*/instance/
-Python/*/.webassets-cache
+Python/**/instance/
+Python/**/.webassets-cache
 # Scrapy stuff:
-Python/*/.scrapy
+Python/**/.scrapy
 # Sphinx documentation
-Python/*/docs/_build/
+Python/**/docs/_build/
 # PyBuilder
-Python/*/.pybuilder/
-Python/*/target/
+Python/**/.pybuilder/
+Python/**/target/
 # Jupyter Notebook
-Python/*/.ipynb_checkpoints
+Python/**/.ipynb_checkpoints
 # IPython
-Python/*/profile_default/
-Python/*/ipython_config.py
+Python/**/profile_default/
+Python/**/ipython_config.py
 # pyenv
 #  For a library or package, you might want to ignore these files since the code is
 #  intended to run in multiple environments; otherwise, check them in:
@@ -919,45 +919,45 @@ Python/*/ipython_config.py
 #  However, in case of collaboration, if having platform-specific dependencies or dependencies
 #  having no cross-platform support, pipenv may install dependencies that don't work, or not
 #  install all needed dependencies.
-Python/*/#Pipfile.lock
+Python/**/#Pipfile.lock
 # poetry
 #  Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #  This is especially recommended for binary packages to ensure reproducibility, and is more
 #  commonly ignored for libraries.
 #  https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-Python/*/#poetry.lock
+Python/**/#poetry.lock
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-Python/*/__pypackages__/
+Python/**/__pypackages__/
 # Celery stuff
-Python/*/celerybeat-schedule
-Python/*/celerybeat.pid
+Python/**/celerybeat-schedule
+Python/**/celerybeat.pid
 # SageMath parsed files
-Python/*/*.sage.py
+Python/**/*.sage.py
 # Environments
-Python/*/.env
-Python/*/.venv
-Python/*/env/
-Python/*/venv/
-Python/*/ENV/
-Python/*/env.bak/
-Python/*/venv.bak/
+Python/**/.env
+Python/**/.venv
+Python/**/env/
+Python/**/venv/
+Python/**/ENV/
+Python/**/env.bak/
+Python/**/venv.bak/
 # Spyder project settings
-Python/*/.spyderproject
-Python/*/.spyproject
+Python/**/.spyderproject
+Python/**/.spyproject
 # Rope project settings
-Python/*/.ropeproject
+Python/**/.ropeproject
 # mkdocs documentation
-Python/*//site
+Python/**//site
 # mypy
-Python/*/.mypy_cache/
-Python/*/.dmypy.json
-Python/*/dmypy.json
+Python/**/.mypy_cache/
+Python/**/.dmypy.json
+Python/**/dmypy.json
 # Pyre type checker
-Python/*/.pyre/
+Python/**/.pyre/
 # pytype static type analyzer
-Python/*/.pytype/
+Python/**/.pytype/
 # Cython debug symbols
-Python/*/cython_debug/
+Python/**/cython_debug/
 
 # PyCharm
 #  JetBrains specific template is maintainted in a separate JetBrains.gitignore that can
@@ -972,20 +972,38 @@ Python/*/cython_debug/
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
-Go/*/*.exe
-Go/*/*.exe~
-Go/*/*.dll
-Go/*/*.so
-Go/*/*.dylib
+Go/**/*.exe
+Go/**/*.exe~
+Go/**/*.dll
+Go/**/*.so
+Go/**/*.dylib
 
 # Test binary, built with `go test -c`
-Go/*/*.test
+Go/**/*.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
-Go/*/*.out
+Go/**/*.out
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
 # Go workspace file
-Go/*/go.work
+Go/**/go.work
+
+
+#Rust
+
+# Generated by Cargo
+# will have compiled files and executables
+Rust/**/debug/
+Rust/**/target/
+
+# Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
+# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+Rust/**/Cargo.lock
+
+# These are backup files generated by rustfmt
+Rust/**/*.rs.bk
+
+# MSVC Windows builds of rustc generate these, which store debugging information
+Rust/**/*.pdb
