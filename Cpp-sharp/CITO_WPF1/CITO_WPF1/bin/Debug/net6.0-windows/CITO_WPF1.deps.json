@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CITO_WPF1/1.0.0": {
+        "runtime": {
+          "CITO_WPF1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CITO_WPF1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
