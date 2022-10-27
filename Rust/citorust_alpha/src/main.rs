@@ -1,5 +1,11 @@
-fn yo<T>(x:T){}
+use futures::{FutureExt, pin_mut};
+
 
 fn main(){
-    let x= yo::<i32>(2);
+    let x= yo();
 }
+async fn yo(){
+    let x =yy().await?;
+}
+
+async fn yy(){}
