@@ -1,0 +1,13 @@
+- name: Create Test Host (Docker)
+  hosts: localhost
+  vars_files:
+    - ./group_vars/vars.yml
+  tasks:
+    - name: Start a container
+      docker_container:
+        name: sleepy
+        image: ubuntu:22.10
+      register: docker
+    - name: Debug yo
+      ansible.builtin.debug:
+        var: docker

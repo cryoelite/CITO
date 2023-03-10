@@ -1007,3 +1007,136 @@ Rust/**/*.rs.bk
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 Rust/**/*.pdb
+
+
+#Ansible
+# build products...
+Ansible/**/*.py[co]
+Ansible/**/build
+Ansible/**/AUTHORS.TXT
+# Emacs backup and autosave files...
+Ansible/**/*~
+Ansible/**/.\#*
+Ansible/**/\#*
+# RPM stuff...
+Ansible/**/MANIFEST
+Ansible/**/dist
+Ansible/**/rpm-build
+# Eclipse/PyDev stuff...
+Ansible/**/.project
+Ansible/**/.pydevproject
+# PyCharm stuff...
+Ansible/**/.idea
+#IntelliJ IDEA stuff..
+Ansible/**/*.iml
+#VSCode stuff..
+Ansible/**/.vscode/
+# Mac OS X stuff...
+Ansible/**/.DS_Store
+# manpage build stuff...
+Ansible/**/docs/man/man1/ansible*.1
+Ansible/**/docs/man/man1/ansible*.1.asciidoc.in
+Ansible/**/docs/man/man3/*
+# Sublime stuff
+Ansible/**/*.sublime-project
+Ansible/**/*.sublime-workspace
+# docsite stuff...
+Ansible/**/docs/docsite/_build
+Ansible/**/docs/docsite/*.html
+Ansible/**/docs/docsite/htmlout
+Ansible/**/docs/docsite/rst/conf.py
+Ansible/**/docs/docsite/rst/index.rst
+Ansible/**/docs/docsite/rst/cli/ansible-*.rst
+Ansible/**/docs/docsite/rst/cli/ansible.rst
+Ansible/**/docs/docsite/rst/dev_guide/collections_galaxy_meta.rst
+Ansible/**/docs/docsite/rst/dev_guide/testing/sanity/index.rst.new
+Ansible/**/docs/docsite/rst/dev_guide/index.rst
+Ansible/**/docs/docsite/rst/modules/*.rst
+Ansible/**/docs/docsite/rst/collections/*.rst
+Ansible/**/!docs/docsite/rst/collections/all_plugins.rst
+Ansible/**/docs/docsite/rst/collections/*/*.rst
+Ansible/**/docs/docsite/rst/playbooks_directives.rst
+Ansible/**/docs/docsite/rst/plugins_by_category.rst
+Ansible/**/docs/docsite/rst/plugins/*/*.rst
+Ansible/**/docs/docsite/rst/reference_appendices/config.rst
+Ansible/**/docs/docsite/rst/reference_appendices/playbooks_keywords.rst
+Ansible/**/docs/docsite/rst_warnings
+Ansible/**/docs/docsite/searchindex.js
+Ansible/**/docs/docsite/_static/*.gif
+Ansible/**/docs/docsite/_static/*.png
+Ansible/**/docs/docsite/_static/websupport.js
+# Vim swap files
+Ansible/**/*.swp
+Ansible/**/*.swo
+Ansible/**/[._]*.un~
+Ansible/**/credentials.yml
+# test output
+Ansible/**/*.retry
+Ansible/**/*.out
+Ansible/**/.pytest_cache/
+Ansible/**/.tox
+Ansible/**/.cache
+Ansible/**/.pytest_cache
+Ansible/**/results.xml
+Ansible/**/coverage.xml
+Ansible/**/test/units/cover-html
+Ansible/**/test/integration/inventory
+Ansible/**/test/integration/targets/*/backup/
+Ansible/**/test/cache/*
+# Development
+Ansible/**/test/develop
+# Environments
+#.env
+Ansible/**/.venv
+Ansible/**/env/
+Ansible/**/venv/
+Ansible/**/ENV/
+Ansible/**/env.bak/
+Ansible/**/venv.bak/
+Ansible/**/venv
+Ansible/**/env
+Ansible/**/Vagrantfile
+Ansible/**/.vagrant
+# Backwards compatibility with `stable-2.9` and earlier branches.
+# Also used in the `devel` branch during early Ansible 2.10 development.
+Ansible/**/lib/ansible.egg-info/
+# First used in the `devel` branch during Ansible 2.10 development.
+Ansible/**/lib/ansible_base.egg-info/
+# First used in the `devel` branch during Ansible 2.11 development.
+Ansible/**/lib/ansible_core.egg-info/
+# vendored lib dir
+Ansible/**/lib/ansible/_vendor/*
+Ansible/**/!lib/ansible/_vendor/__init__.py
+# test stuff
+Ansible/**/test/integration/cloud-config-*.*
+Ansible/**/!/test/integration/cloud-config-*.*.template
+Ansible/**/.python-version
+Ansible/**/hacking/tests/selinux/*.mod
+Ansible/**/hacking/tests/selinux/*.pp
+# Release directory
+Ansible/**/packaging/release/ansible_release
+Ansible/**/.cache/
+Ansible/**/test/results/
+Ansible/**/test/integration/cloud-config-aws.yml
+Ansible/**/test/integration/inventory.networking
+Ansible/**/test/integration/inventory.winrm
+Ansible/**/test/integration/cloud-config-aws.yml
+Ansible/**/test/integration/cloud-config-cs.ini
+# python 'rope' stuff
+Ansible/**/.ropeproject
+# local 'ack' config files
+Ansible/**/.ackrc
+# default 'coverage html' results
+Ansible/**/htmlcov/
+# default 'coverage' tool data
+Ansible/**/.coverage
+# ansible-test coverage results
+Ansible/**/test/units/.coverage.*
+Ansible/**/test/integration/cloud-config-azure.yml
+Ansible/**/SYMLINK_CACHE.json
+Ansible/**/changelogs/.plugin-cache.yaml
+Ansible/**/.ansible-test-timeout.json
+
+Ansible/**/.env
+Ansible/**/.vault-pass
+
