@@ -6,6 +6,8 @@ services:
     build:
       context: ..
       dockerfile: "docker/Dockerfile"
+    volumes:  #The context doesn't apply to the other docker-compose configurations
+      - ../playbooks:/root/development/playbooks
     ports:
       - "8007:80"
       - "8008:443"

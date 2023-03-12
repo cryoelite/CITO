@@ -1,7 +1,7 @@
 - name: Create Test Host (Docker)
   hosts: localhost
   vars_files:
-    - ./group_vars/vars.yml
+    - /root/development/group_vars/vars.yml
   tasks:
     - name: Start a container
       docker_container:

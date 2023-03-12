@@ -1,4 +1,7 @@
 #!/bin/sh
+echo "Checking docker daemon"
+docker info
+
 echo "Starting to store env vars in the vault"
 echo "The BKP_LOC is $BKP_LOC"
 
@@ -16,12 +19,11 @@ echo "Ansible Vault Created"
 cat /root/development/group_vars/vars.yml
 echo "Catted"
 
-
-ansible-playbook -i /root/development/custom_inventory.ini ~/development/setup.ansible.yml  --vault-password-file /root/development/.vault-pass
+ansible-playbook -i /root/development/custom_inventory.ini ~/development/playbooks/setup.ansible.yml  --vault-password-file /root/development/.vault-pass
 
 echo "Playbook 1 finished"
 
-#ansible-playbook -i /root/development/custom_inventory.ini ~/development/config.ansible.yml --vault-password-file /root/development/.vault-pass
+#ansible-playbook -i /root/development/custom_inventory.ini ~/development/playbooks/config.ansible.yml --vault-password-file /root/development/.vault-pass
 
 
 echo "All Playbooks finished"
