@@ -5,6 +5,9 @@ docker info
 echo "Starting to store env vars in the vault"
 echo "The BKP_LOC is $BKP_LOC"
 
+ansible-vault encrypt_string $DOCKER_HOSTNAME --name 'docker_hostname' --vault-password-file /root/development/.vault-pass | tee -a ~/development/group_vars/vars.yml
+echo "" >> /root/development/group_vars/vars.yml
+
 ansible-vault encrypt_string $ROOT_PS --name 'password' --vault-password-file /root/development/.vault-pass | tee -a ~/development/group_vars/vars.yml
 echo "" >> /root/development/group_vars/vars.yml
 
@@ -23,7 +26,7 @@ ansible-playbook -i /root/development/custom_inventory.ini ~/development/playboo
 
 echo "Playbook 1 finished"
 
-#ansible-playbook -i /root/development/custom_inventory.ini ~/development/playbooks/config.ansible.yml --vault-password-file /root/development/.vault-pass
+ansible-playbook -i /root/development/custom_inventory.ini ~/development/playbooks/config.ansible.yml --vault-password-file /root/development/.vault-pass
 
 
 echo "All Playbooks finished"

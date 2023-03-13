@@ -8,9 +8,14 @@ services:
       dockerfile: "docker/Dockerfile"
     volumes:  #The context doesn't apply to the other docker-compose configurations
       - ../playbooks:/root/development/playbooks
+      - //var/run/docker.sock:/var/run/docker.sock #Required for Docker to , potentially dangerous as it allows containers to modify host.
     ports:
       - "8007:80"
       - "8008:443"
     env_file:
       - .env
+    privileged: true #Required for Docker DIND, potentially dangerous as it allows containers to modify host.
+
+
+
 

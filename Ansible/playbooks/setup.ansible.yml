@@ -5,9 +5,22 @@
   tasks:
     - name: Start a container
       docker_container:
-        name: sleepy
+        name: ansiblu-CITO1
         image: ubuntu:22.10
       register: docker
-    - name: Debug yo
-      ansible.builtin.debug:
-        var: docker
+
+    - name: Add docker container to hosts
+      add_host:
+        hostname: "{{ docker_hostname }}"
+        groupname: containers
+        ansible_connection: docker
+
+      #can also use lineinfile module to add a line
+    - name: Update inventory file with docker container
+      community.general.ini_file:
+        no_extra_spaces: true
+        path: /root/development/custom_inventory.ini
+        section: containers
+        option: "{{docker_hostname}} ansible_connection"
+        value: docker
+        state: present

@@ -1,8 +1,9 @@
-- name: Test Playbook
-  hosts: localhost
+#based on https://stackoverflow.com/a/47600762/13036358
+- name: Test Configuration Playbook
+  hosts: containers
   become: true
   vars_files:
-      - ./group_vars/vars.yml
+      - /root/development/group_vars/vars.yml
   
   tasks:
     - name: Update and Upgrade
@@ -10,142 +11,8 @@
       apt:
         update_cache: yes
         upgrade: yes
+    
+    - command: "echo 'Debug Yo!'"
+      
 
-    - name: Create Directory
-      become: true
-      file:
-        path: /home/ValheimGH/
-        state: directory
-        mode: '0755'
-        recurse: yes
-
-    - name: Install aptitude
-      apt:
-        name: aptitude
-        state: latest
-        update_cache: true
-
-    - name: Install nano
-      become: true
-      apt:
-        pkg: nano
-        state: present
-        update_cache: true
-
-    - name: Install required system packages
-      apt:
-        pkg:
-          - apt-transport-https
-          - ca-certificates
-          - curl
-          - software-properties-common
-          - python3-pip
-          - virtualenv
-          - python3-setuptools
-          - jq
-          - git
-          - unzip
-          - zstd
-          - zip
-        state: latest
-        update_cache: true
-
-    - name: Add Docker GPG apt Key
-      apt_key:
-        url: https://download.docker.com/linux/ubuntu/gpg
-        state: present
-
-    - name: Add Docker Repository
-      apt_repository:
-        repo: deb https://download.docker.com/linux/ubuntu focal stable
-        state: present
-
-    - name: Update apt and install docker-ce
-      apt:
-        name: docker-ce
-        state: latest
-        update_cache: true
-
-    - name: Install Docker Module for Python
-      pip:
-        name: docker
-
-    - name: Add adminstrator to docker group
-      user:
-        name: "dev"
-        groups: docker
-        append: yes
-
-    - name: Install Docker Compose
-      get_url:
-        url: "https://github.com/docker/compose/releases/download/v2.14.2/docker-compose-linux-x86_64"
-        dest: /usr/local/bin/docker-compose
-        mode: u+x,g+x,o+x
-
-    - name: Make valheim config directory
-      become: true
-      file: 
-        path: /home/ValheimGH/Valheim/config/
-        group: root
-        owner: root
-        mode: '0755'
-        state: directory
-
-    - name: Make valheim data directory
-      become: true
-      file: 
-        path: /home/ValheimGH/Valheim/data/
-        group: root
-        owner: root
-        mode: '0755'
-        state: directory
-
-    - name: Debug printing BKP_LOC value
-      debug:
-        msg: "Backup URL is: {{ BKP_LOC }}"
-      when: BKP_LOC is defined and BKP_LOC|length > 0
-
-    - name: Make download directory
-      become: true
-      file: 
-        path: /home/ValheimGH/download/
-        group: root
-        owner: root
-        mode: '0755'
-        state: directory
-      when: BKP_LOC is defined and BKP_LOC|length > 0
-
-    - name: Download backup dedicated world
-      become: true
-      get_url:
-       url: "{{ BKP_LOC }}"
-       dest: /home/ValheimGH/download/backup.zip
-       group: root
-       owner: root
-       mode: 0755
-      when: BKP_LOC is defined and BKP_LOC|length > 0
-      ignore_errors: True
-
-    - name: Unzip Backup world
-      become: true
-      command: unzip /home/ValheimGH/download/backup.zip -d /home/ValheimGH/download/
-      when: BKP_LOC is defined and BKP_LOC|length > 0  
-      ignore_errors: True   
-
-    - name: Copy Backup world
-      become: true
-      ansible.builtin.copy: 
-        src: /home/ValheimGH/download/config/
-        dest: /home/ValheimGH/Valheim/config/
-        remote_src: true
-        group: root
-        owner: root
-        mode: '0755'
-      when: BKP_LOC is defined and BKP_LOC|length > 0
-      ignore_errors: True 
-
-    - name: Reboot
-      become: true
-      ansible.builtin.reboot: 
-        test_command: echo "Booted!"
 
