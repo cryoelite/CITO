@@ -65,6 +65,4 @@ RUN touch ~/development/custom_inventory.ini
 RUN chmod 777 ~/development/custom_inventory.ini
 
 
-
-
 ENTRYPOINT ["/root/development/setup.sh"]

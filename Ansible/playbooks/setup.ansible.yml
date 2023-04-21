@@ -6,7 +6,7 @@
     - name: Start a container
       docker_container:
         name: ansiblu-CITO1
-        image: ubuntu:22.10
+        image: ubuntu:22.10        
       register: docker
 
     - name: Add docker container to hosts
