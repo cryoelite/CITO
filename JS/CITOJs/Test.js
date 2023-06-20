@@ -1,2 +1,15 @@
+"use strict";
 
-console.log("1"+0+2-"1"+2-1+"1");
+let x = {
+  a: 2,
+};
+
+let proxy = new Proxy(x, {
+  get(x, prop) {
+    if (prop == "a") {
+      return 1;
+    } else return x[prop];
+  },
+});
+
+console.log(proxy.a);
