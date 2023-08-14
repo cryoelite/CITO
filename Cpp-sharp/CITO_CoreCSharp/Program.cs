@@ -10,3 +10,21 @@ namespace CITO_CoreCSharp
         }
     }
 }
+
+public class Rootobject
+{
+    public string sheetName { get; set; }
+    public Cell[] cells { get; set; }
+}
+
+public class Cell
+{
+    public string cellId { get; set; }
+    public string data { get; set; }
+    public Style style { get; set; }
+}
+
+public class Style
+{
+    public string someProp { get; set; }
+}

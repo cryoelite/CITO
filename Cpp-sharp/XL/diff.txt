@@ -1,0 +1,32 @@
+Objective: Implement Git Diff for Excel Workbooks, which would diff the worksheet names, data and styles and VBA class modules.
+
+Possible ways:
+1. Use ExcelJS (MIT License) which can import/export worksheet data across different formats (xls* to csv and back)
+2. Use xlwings/git-xl (MIT License) or plaintext for VBA files in a workbook to diff 
+3. Use NPOI (Apache 2.0 License) or plain Microsoft Office Interop in .net to export data, for each workbook's worksheet create a file such as in .json, with all its data and styles.
+For ex.:
+
+In a "sheet1.json"
+{
+    "sheetName": "sheet1",
+    "cells": [
+        {
+            "cellId": "01",
+            "cellData": {
+                "CellType": "something",
+                "style": {
+                "someProp": "someValue"
+                }
+            },
+        },
+        {
+            "cellId": "02",
+            "cellData": {
+                "CellType": "something",
+                "style": {
+                "someProp": "someValue"
+                }
+            },
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "sheetName": "sheet1",
+    "cells": [
+        {
+            "cellId": "0A",
+            "data": "lorem ipsum",
+            "style": {
+                "someProp": "someValue"
+            }
+        },
+        {
+            "cellId": "0B",
+            "data": "lorem ipsum",
+            "style": {
+                "someProp": "someValue"
+            }
+        }
+    ]
+}

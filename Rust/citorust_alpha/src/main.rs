@@ -1,11 +1,16 @@
-use futures::{FutureExt, pin_mut};
+use std::ops::Add;
 
-
-fn main(){
-    let x= yo();
+struct X {
+    Y: i32,
 }
-async fn yo(){
-    let x =yy().await?;
+impl Add for X {
+    type Output = i32;
+    fn add(self, other: X) -> Self::Output {
+        self.Y + other.Y
+    }
 }
-
-async fn yy(){}
+fn main() {
+    let a = X { Y: 2 };
+    let b = X { Y: 3 };
+    let c = a + b; //works
+}
