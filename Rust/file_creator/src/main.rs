@@ -1,4 +1,4 @@
-use std::fs::File;
+use std::{fs::File, io::Write};
 
 use chrono::{Datelike, Days, Duration};
 
@@ -7,7 +7,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let end_day = chrono::NaiveDate::from_ymd_opt(2023, 12, 30).unwrap();
     let base_path = r#"C:\NFBase\GitHub\Personal_Notes\Daisy\journals\"#;
     let mut iterator_date = start_day;
-
+    let file_content=br#"-"#;
     while iterator_date != end_day {
         let file_path = String::from(format!(
             "{}{}_{}_{}.md",
@@ -18,7 +18,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         ));
 
         println!("Creating {}", file_path);
-        File::create(file_path)?;
+        let mut file= File::create(file_path)?;
+        file.write(file_content)?;
+        
         iterator_date = chrono::NaiveDate::checked_add_days(iterator_date, Days::new(1)).unwrap();
     }
 

@@ -1,12 +1,14 @@
 {
   "dependencies": {
-    "exceljs": "^4.3.0",
-    "https": "^1.0.0",
-    "jsdom": "^16.6.0",
-    "node-fetch": "^2.6.1",
-    "node-key-sender": "^1.0.11",
-    "puppeteer": "^10.1.0",
-    "robotjs": "^0.6.0",
-    "spotify-dl": "^1.0.4"
-  }
+    "express": "^4.18.2"
+  },
+  "name": "citojs",
+  "version": "1.0.0",
+  "description": "CITO's taste on node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cryonim",
+  "license": "ISC"
 }
