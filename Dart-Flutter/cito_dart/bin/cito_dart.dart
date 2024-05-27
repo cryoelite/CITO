@@ -1,4 +1,6 @@
+import 'package:cito_dart/cito_dart.dart';
+
 void main() {
-  print(4 + 2 - 3);
-  print(4 - 3 + 2);
+  String x = '\u1234';
+  print(x);
 }
