@@ -1,7 +1,7 @@
-package main
+package GoCITO
 
 import "fmt"
 
-func main() {
+func GoCITO() {
 	fmt.Println("Ayo")
 }
