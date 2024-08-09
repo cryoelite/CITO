@@ -839,6 +839,46 @@ JS/**/.yarn/build-state.yml
 JS/**/.yarn/install-state.gz
 JS/**/.pnp.*
 
+# NextJS
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+NextJS/**//node_modules
+NextJS/**//.pnp
+NextJS/**/.pnp.js
+NextJS/**/.yarn/install-state.gz
+
+# testing
+NextJS/**//coverage
+
+# next.js
+NextJS/**//.next/
+NextJS/**//out/
+
+# production
+NextJS/**//build
+
+# misc
+NextJS/**/.DS_Store
+NextJS/**/*.pem
+
+# debug
+NextJS/**/npm-debug.log*
+NextJS/**/yarn-debug.log*
+NextJS/**/yarn-error.log*
+
+# local env files
+NextJS/**/.env*.local
+
+# vercel
+NextJS/**/.vercel
+
+# typescript
+NextJS/**/*.tsbuildinfo
+NextJS/**/next-env.d.ts
+
+
+
 # Python
 # Byte-compiled / optimized / DLL files
 Python/**/__pycache__/
