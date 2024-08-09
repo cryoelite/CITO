@@ -1,6 +1,6 @@
 import 'package:cito_dart/cito_dart.dart';
 
 void main() {
-  String x = '\u1234';
-  print(x);
+  ({int a, int b}) rec = (a: 2, b: 3);
+  var (:a, :b) = rec;
 }
