@@ -1,6 +1,3 @@
 from collections import OrderedDict
-
-x= {"a":1,"b":2}
-for a,b in x.items():
-    print("{} and {}".format(a,b))
-
+x= "/subscriptions/7fdac9e3-d9b9-4025-9ea4-86a0963ae134"
+print(x.split('/')[2])
