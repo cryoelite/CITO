@@ -1,0 +1,4 @@
+azure-mgmt-recoveryservices
+azure-identity
+pyexcel-ods
+azure-mgmt-recoveryservicesbackup
