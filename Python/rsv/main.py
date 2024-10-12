@@ -69,7 +69,7 @@ def handler():
     # Auth
     logger.info("Authorizing")
     credential = InteractiveBrowserCredential()
-    logger.info("Authorization Done, connections opened")
+    logger.info("Authorization Done")
 
     try:
         logger.info("Starting processing")
@@ -87,7 +87,7 @@ def handler():
             b_client = RecoveryServicesBackupClient(
                 credential=credential, subscription_id=subscription_id
             )
-            logger.info("Client authorized for {}".format(subscription_id))
+            logger.info("Client authorized and connections open for {}".format(subscription_id))
 
             logger.info("Getting vaults")
 
