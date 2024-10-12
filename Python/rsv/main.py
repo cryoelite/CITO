@@ -40,7 +40,7 @@ BACKUP_ITEM_HEADERS = [
 
 RECOVERY_POINT_HEADERS = [
     "Backup Item Name",
-    "Recovery Point Name",
+    "Recovery Point ID",
     "Creation Time",
     "Consistency",
     "Recovery Type",
@@ -60,7 +60,7 @@ SHEET3_HEADERS = [
 ]
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(filename="main.log", encoding="utf-8", level=logging.INFO)
 
 
 def handler():
@@ -87,7 +87,9 @@ def handler():
             b_client = RecoveryServicesBackupClient(
                 credential=credential, subscription_id=subscription_id
             )
-            logger.info("Client authorized and connections open for {}".format(subscription_id))
+            logger.info(
+                "Client authorized and connections open for {}".format(subscription_id)
+            )
 
             logger.info("Getting vaults")
 
@@ -142,14 +144,21 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
     vault_location = vault.location
     vault_subid = str(vault.id).split("/")[2]
 
-    vault_storage_replication_type = (
-        vault.properties.redundancy_settings.standard_tier_storage_redundancy
-    )
+    vault_storage_replication_type = "Not Available"
+    if (
+        vault.properties.redundancy_settings is not None
+        and vault.properties.redundancy_settings.standard_tier_storage_redundancy
+        is not None
+    ):
+        vault_storage_replication_type = (
+            vault.properties.redundancy_settings.standard_tier_storage_redundancy
+        )
+
     vault_immutability = "Not Available"
     if (
-        vault.properties
-        and vault.properties.security_settings
-        and vault.properties.security_settings.immutability_settings
+        vault.properties is not None
+        and vault.properties.security_settings is not None
+        and vault.properties.security_settings.immutability_settings is not None
     ):
         vault_immutability = (
             vault.properties.security_settings.immutability_settings.state
@@ -158,13 +167,13 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
     logger.info("Storing Recovery Vault for {}".format(vault.name))
     sheet1.append(
         [
-            vault_name,
-            vault_type,
-            vault_immutability,
-            vault_resource_group,
-            vault_location,
-            vault_subid,
-            vault_storage_replication_type,
+            str(vault_name),
+            str(vault_type),
+            str(vault_immutability),
+            str(vault_resource_group),
+            str(vault_location),
+            str(vault_subid),
+            str(vault_storage_replication_type),
         ]
     )
     logger.info("Storage complete for {}".format(vault.name))
@@ -176,7 +185,11 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
     logger.info("Got {} backup items".format(len(backup_items)))
 
     for backup_item in backup_items:
-        logger.info("Processing backup item {}".format(backup_item.name))
+        logger.info(
+            "Processing backup item {} with id {}".format(
+                backup_item.name, backup_item.id
+            )
+        )
 
         backup_item_name = backup_item.name
         backup_management_type = backup_item.properties.backup_management_type
@@ -185,32 +198,32 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
         backup_item_health_status = "Not Available"
         backup_item_last_backup_status = "Not Available"
         # https://learn.microsoft.com/en-us/python/api/azure-mgmt-recoveryservicesbackup/azure.mgmt.recoveryservicesbackup.activestamp.models.protecteditem?view=azure-python, ProtectedItemResource.properties can be one of the given subclasses in it, and its properties depend on that subclass.
-        if issubclass(backup_item.properties, backup_models.AzureIaaSVMProtectedItem):
+        if isinstance(backup_item.properties, backup_models.AzureIaaSVMProtectedItem):
             backup_item_health_status = backup_item.properties.health_status  # https://learn.microsoft.com/en-us/python/api/azure-mgmt-recoveryservicesbackup/azure.mgmt.recoveryservicesbackup.activestamp.models.azureiaasvmprotecteditem?view=azure-python
             backup_item_last_backup_status = (
-                backup_item.properties.last_backup_status
+                str(backup_item.properties.last_backup_status)
                 + " "
-                + backup_item.properties.last_backup_time
+                + str(backup_item.properties.last_backup_time)
             )
 
         if (
-            issubclass(
+            isinstance(
                 backup_item.properties, backup_models.AzureFileshareProtectedItem
             )
-            or issubclass(
+            or isinstance(
                 backup_item.properties, backup_models.MabFileFolderProtectedItem
             )
-            or issubclass(
+            or isinstance(
                 backup_item.properties, backup_models.AzureVmWorkloadProtectedItem
             )
         ):
             backup_item_last_backup_status = (
-                backup_item.properties.last_backup_status
+                str(backup_item.properties.last_backup_status)
                 + " "
-                + backup_item.properties.last_backup_time
+                + str(backup_item.properties.last_backup_time)
             )
 
-        if issubclass(
+        if isinstance(
             backup_item.properties, backup_models.AzureVmWorkloadProtectedItem
         ):
             backup_item_health_status = (
@@ -218,7 +231,13 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
             )
 
         backup_item_backup_policy = backup_item.properties.policy_name
-        backup_item_subscription = backup_item.id.split("/")[2]
+
+        backup_item_id_parts = str(backup_item.id).split("/")
+        backup_item_resource_group = backup_item_id_parts[4]
+        backup_item_fabric = backup_item_id_parts[10]
+        backup_item_container = backup_item_id_parts[12]
+        backup_item_protected_item_name = backup_item_id_parts[14]
+        backup_item_subscription = backup_item_id_parts[2]
         backup_item_subscription_id = vault_subid
 
         logger.info(
@@ -228,14 +247,14 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
         )
         sheet2.append(
             [
-                backup_management_type,
-                backup_item_name,
-                vault_name,
-                backup_item_health_status,
-                backup_item_last_backup_status,
-                backup_item_backup_policy,
-                backup_item_subscription,
-                backup_item_subscription_id,
+                str(backup_management_type),
+                str(backup_item_name),
+                str(vault_name),
+                str(backup_item_health_status),
+                str(backup_item_last_backup_status),
+                str(backup_item_backup_policy),
+                str(backup_item_subscription),
+                str(backup_item_subscription_id),
             ]
         )
         logger.info(
@@ -244,17 +263,14 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
             )
         )
 
-        container_name = backup_item.id.split("/")[8]
-        protected_item_name = backup_item.id.split("/")[-1]
-
         logger.info("Getting recovery points")
         recovery_points = list(
             b_client.recovery_points.list(
-                vault_name,
-                vault_resource_group,
-                fabric_name="Azure",
-                container_name=container_name,
-                protected_item_name=protected_item_name,
+                vault_name=vault_name,
+                resource_group_name=backup_item_resource_group,
+                fabric_name=backup_item_fabric,
+                container_name=backup_item_container,
+                protected_item_name=backup_item_protected_item_name,
             )
         )
 
@@ -268,45 +284,75 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
             logger.info("Processing recovery point {}".format(rp.name))
 
             # https://learn.microsoft.com/en-us/python/api/azure-mgmt-recoveryservicesbackup/azure.mgmt.recoveryservicesbackup.activestamp.models.recoverypoint?view=azure-python
-            rp_name = rp.name
+            rp_id = rp.id
             rp_creation_time = "Not Available"
             rp_consistency = "Not Available"
             rp_recovery_type = "Not Available"
             rp_expiry_time = "Not Available"
-            if (
-                isinstance(rp.properties, backup_models.AzureFileShareRecoveryPoint)
-                or isinstance(rp.properties, backup_models.GenericRecoveryPoint)
-                or isinstance(rp.properties, backup_models.IaasVMRecoveryPoint)
-            ):
+
+            if isinstance(rp.properties, backup_models.AzureFileShareRecoveryPoint):
                 rp_creation_time = rp.properties.recovery_point_time
-                rp_recovery_type = rp.properties.recovery_point_type
-                rp_expiry_time = rp.properties.recovery_point_properties.expiry_time
-                rp_consistency = rp.properties.recovery_point_properties.rule_name
+                rp_consistency = rp.properties.recovery_point_type
+                rp_recovery_type = rp.properties.object_type
+                if (
+                    rp.properties.recovery_point_properties
+                    and rp.properties.recovery_point_properties.expiry_time
+                ):
+                    rp_expiry_time = rp.properties.recovery_point_properties.expiry_time
 
             if isinstance(rp.properties, backup_models.AzureWorkloadRecoveryPoint):
                 rp_creation_time = rp.properties.recovery_point_time_in_utc
                 rp_recovery_type = rp.properties.type
+                if (
+                    rp.properties.recovery_point_properties
+                    and rp.properties.recovery_point_properties.expiry_time
+                ):
+                    rp_expiry_time = rp.properties.recovery_point_properties.expiry_time
+
+            if isinstance(rp.properties, backup_models.GenericRecoveryPoint):
+                rp_creation_time = rp.properties.recovery_point_time
+                rp_recovery_type = rp.properties.recovery_point_type
+                if (
+                    rp.properties.recovery_point_properties
+                    and rp.properties.recovery_point_properties.expiry_time
+                ):
+                    rp_expiry_time = rp.properties.recovery_point_properties.expiry_time
+
+            if isinstance(rp.properties, backup_models.IaasVMRecoveryPoint):
+                rp_creation_time = rp.properties.recovery_point_time
+                rp_recovery_type = rp.properties.source_vm_storage_type
+                rp_consistency = rp.properties.recovery_point_type
+                if (
+                    rp.properties.recovery_point_properties
+                    and rp.properties.recovery_point_properties.expiry_time
+                ):
+                    rp_expiry_time = rp.properties.recovery_point_properties.expiry_time
+
             logger.info(
                 "Storing Recovery point {} for backup item {}".format(
-                    rp_name, backup_item_name
+                    rp_id, backup_item_name
                 )
             )
             sheet3.append(
                 [
-                    backup_item_name,
-                    rp_name,
-                    rp_creation_time,
-                    rp_consistency,
-                    rp_recovery_type,
-                    rp_expiry_time,
+                    str(backup_item_name),
+                    str(rp_id),
+                    str(rp_creation_time),
+                    str(rp_consistency),
+                    str(rp_recovery_type),
+                    str(rp_expiry_time),
                 ]
             )
             logger.info(
                 "Storage complete for Recovery point {} of backup item {}".format(
-                    rp_name, backup_item_name
+                    rp_id, backup_item_name
                 )
             )
-            logger.info("Finished processing recovery point")
+            logger.info(
+                "Finished processing  Recovery point {} of backup item {}".format(
+                    rp_id, backup_item_name
+                )
+            )
         logger.info("Finished processing backup item {}".format(backup_item.name))
     logger.info("Finished processing backup items")
 
@@ -324,7 +370,8 @@ def process_vault(vault: models.Vault, b_client: RecoveryServicesBackupClient):
 
 
 def write_to_file(filename: str, data: dict):
-    logger.info("Writing to {}".format(filename))
+    logger.info("Writing to {}.ods".format(filename))
+    filename = str(filename) + ".ods"
     ods.save_data(filename, data)
     logger.info("Successfully wrote {}".format(filename))
 
