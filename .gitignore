@@ -40,7 +40,10 @@ Android/**/*.ipr
 Android/**/*~
 Android/**/*.swp
 
-
+#Arduino
+Arduino/**/*.pio
+Arduino/**/.vscode/.browse.c_cpp.db*
+Arduino/**/.vscode/ipch */
 
 #Kotlin
 Kotlin/**/.DS_Store
