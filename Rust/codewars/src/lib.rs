@@ -1,4 +1,4 @@
-use std::collections::btree_map::Range;
+use std::{borrow::Borrow, collections::btree_map::Range};
 
 #[cfg(test)]
 pub mod test {
@@ -20,7 +20,7 @@ where
     T::Item: std::cmp::PartialEq + std::fmt::Debug,
 {
     let it = &sequence.into_iter();
-    let x: &T = *it;
+    let x = it.next().unwrap();
     let arr: Vec<<T as IntoIterator>::Item> = vec![];
     for i in sequence {
         
