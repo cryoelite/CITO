@@ -1,5 +1,22 @@
 ---
+import '../styles/global.css';
 
+const pageTitle = "About Me";
+const identity = {
+  name: "cryo",
+  country: "India",
+  occupation: "Professional Smell Guesser",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "upper";
 ---
 
 <html lang="en">
@@ -8,14 +25,47 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+
+    <title>{pageTitle}</title>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+    </style>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
-    <a href="/blogs/">Blogs</a>
-    <h1>About me</h1>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
     <h2>I'm learning Astro!</h2>
-    <p> So far so good</p>
+    <p>My name is {identity.name}</p>
+    <p>I'm from {identity.country} and I work as a {identity.occupation}</p>
+    <h3>My hobbies are:</h3>
+    <ul>
+      {identity.hobbies.map((val) => <li>{val}</li>)}
+    </ul>
+    <h3>My skills are:</h3>
+    <ul>
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+
+    {finished && <p>I finished this tutorial!</p>}
+
+    {
+      goal === 3 ? (
+        <p>My goal is to finish in 3 days.</p>
+      ) : (
+        <p>My goal is not 3 days.</p>
+      )
+    }
   </body>
 </html>
