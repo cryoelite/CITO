@@ -1224,3 +1224,51 @@ React/**/packages/react-devtools-extensions/.tempUserDataDir
 React/**/packages/react-devtools-inline/dist
 React/**/packages/react-devtools-shell/dist
 React/**/packages/react-devtools-timeline/dist
+
+
+
+
+html-css-js/**/node_modules/
+html-css-js/**/dist/
+html-css-js/**/*.tsbuildinfo
+html-css-js/**/.DS_Store
+html-css-js/**/.vercel
+html-css-js/**/.netlify
+html-css-js/**/_site/
+html-css-js/**/.astro/
+html-css-js/**/scripts/smoke/*-main/
+html-css-js/**/scripts/memory/project/src/pages/
+html-css-js/**/benchmark/projects/
+html-css-js/**/benchmark/results/
+html-css-js/**/test-results/
+html-css-js/**/*.log
+html-css-js/**/package-lock.json
+html-css-js/**/.turbo/
+html-css-js/**/.eslintcache
+html-css-js/**/.pnpm-store
+html-css-js/**/.vscode-test/
+
+# do not commit .env files or any files that end with `.env`
+html-css-js/**/*.env
+
+html-css-js/**/packages/astro/src/**/*.prebuilt.ts
+html-css-js/**/packages/astro/src/**/*.prebuilt-dev.ts
+html-css-js/**/packages/astro/test/units/_temp-fixtures/*
+html-css-js/**/!packages/astro/test/units/_temp-fixtures/package.json
+html-css-js/**/packages/integrations/**/.netlify/
+
+# exclude IntelliJ/WebStorm stuff
+html-css-js/**/.idea
+
+# ignore content collection generated files
+html-css-js/**/packages/**/test/**/fixtures/**/.astro/
+html-css-js/**/packages/**/test/**/fixtures/**/env.d.ts
+html-css-js/**/packages/**/e2e/**/fixtures/**/.astro/
+html-css-js/**/packages/**/e2e/**/fixtures/**/env.d.ts
+html-css-js/**/examples/**/.astro/
+html-css-js/**/examples/**/env.d.ts
+
+# make it easy for people to add project-specific Astro settings that they don't
+# want to share with others (see
+# https://github.com/withastro/astro/pull/11759#discussion_r1721444711)
+html-css-js/**/*.code-workspace
