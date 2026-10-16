@@ -1,0 +1,5 @@
+#Arduino
+**/*.pio
+**/.vscode/.browse.c_cpp.db*
+**/.vscode/ipch */
+
